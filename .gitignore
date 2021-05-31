@@ -1,2 +1,3 @@
 sitemap.xml
-wp-content/uploads/
+/wp-content/uploads/
+/wp-content/themes/apex/bundled-min.css
