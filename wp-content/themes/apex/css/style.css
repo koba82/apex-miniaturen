@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-weight: 700;
-	--h-font-scale-factor: 4;
+	--h-font-scale-factor: 2.5;
 }
 
 h2 {
@@ -1859,9 +1859,8 @@ form input:hover[type=submit] {
 }
 
 .footer-logo {
-	--col-span: var(--grid);
 	flex: 0 0 var(--width);
-	margin: var(--gutter-lg) 0;
+	margin: .5rem var(--gutter-lg) 0;
 }
 
 .footer-logo .logo-link {
@@ -1871,7 +1870,6 @@ form input:hover[type=submit] {
 
 .footer-logo img {
 	width: 100%;
-	height: 100%;
 	object-fit: contain;
 }
 

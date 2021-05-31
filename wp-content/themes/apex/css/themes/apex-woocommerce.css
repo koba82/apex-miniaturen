@@ -1529,6 +1529,46 @@ ul.woocommerce-error {
 	border-radius: var(--bor-radius-md);
 }
 
+.card .content-image-wrap {
+	--card-content-image-margin: calc( -1 * var(--card-padding) );
+	margin: var(--card-content-image-margin) var(--card-content-image-margin) 0 var(--card-content-image-margin);
+}
+
+table.content-table {
+	margin-top: var(--gutter-sm);
+	width: 100%;
+}
+
+.content-table th, .content-table td {
+	padding: var(--gutter-sm);
+	text-align: center;
+}
+
+.content-table th {
+	border-top: 1px solid var(--sec-color);
+	/*background: var(--sec-color);*/
+	border-right: 1px solid var(--sec-color);
+}
+
+.content-table td {
+	border-top: 1px solid var(--sec-color);
+	border-right: 1px solid var(--sec-color);
+}
+
+.content-table td:last-of-type, .content-table th:last-of-type {
+	border-right: none;
+}
+
+.content-table tr:last-of-type td {
+	border-bottom: 1px solid var(--sec-color);
+}
+
+.product-size-chart i {
+	display: block;
+	margin-top: var(--gutter-sm);
+	font-size: .9em;
+}
+
 
 
 @media screen and (max-width: 1150px) {

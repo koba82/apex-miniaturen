@@ -1087,3 +1087,40 @@ function replace_layered_nav_widget() {
     unregister_widget( 'WC_Widget_Layered_Nav' );
     register_widget( 'WC_Widget_Layered_Nav_Apex' );
 }
+
+
+/*****************************
+ * Size chart
+ */
+
+    function the_size_chart() {
+
+        global $product;
+        global $post;
+        $output = '';
+
+        $scale = ($product->get_attribute('schaal')) ? $product->get_attribute('schaal') : false;
+        $terms = get_the_terms( $post->ID, 'product_cat' );
+        $category = $terms[0]->slug;
+
+        $sizechart = [
+                '1:43' => [
+                    'formule-1' => '<td>~ 10-13cm</td><td>~ 5cm</td><td>~ 2-3cm</td>',
+                    'le-mans-endurance' => '<td>~ 8-11cm</td><td>~ 5cm</td><td>~ 3cm</td>'
+                ],
+                '1:18' => [
+                    'formule-1' => '<td>~ 30cm</td><td>~ 10cm</td><td>~ 6cm</td>'
+                ]
+        ];
+
+        if(array_key_exists($scale, $sizechart) && array_key_exists($category, $sizechart[$scale]) ) :
+
+            $output = '<div class="product-size-chart"><h4>Afmetingen</h4><table class="content-table"><tr><th>Lengte</th><th>Breedte</th><th>Hoogte</th></tr><tr>';
+            $output.= $sizechart[$scale][$category];
+            $output.= '</tr></table><i>Afmetingen zijn bij benadering.</i></div>';
+
+        endif;
+
+       return $output;
+
+    }
