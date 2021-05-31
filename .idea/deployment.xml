@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="ApMin-Vimexx">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/domains/apex-miniaturen.nl/public_html" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/domains/apex-miniaturen.nl/public_html/ports" />
+            <excludedPath path="/domains/apex-miniaturen.nl/public_html/wp-content/uploads" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

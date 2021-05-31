@@ -1,0 +1,1126 @@
+# Translation of Plugins - FiboSearch &#8211; Ajax Search for WooCommerce - Stable (latest release) in Dutch
+# This file is distributed under the same license as the Plugins - FiboSearch &#8211; Ajax Search for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-04-23 07:02:59+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - FiboSearch &#8211; Ajax Search for WooCommerce - Stable (latest release)\n"
+
+#: includes/Admin/Troubleshooting.php:286
+msgid "Is your website publicly available only for whitelisted IPs? <b>Add your server IP to the whitelist</b>. That’s all. This is a common mistake when access is blocked by a <code>.htaccess</code> file. Developers add a list of allowed IPs, but they forget to add the IP of the server to allow make HTTP requests to itself."
+msgstr "Is je site alleen openbaar beschikbaar voor IP-adressen op de witte lijst? <b>Voeg je server IP toe aan de witte lijst</b>. Dat is alles. Dit is een veelgemaakte fout wanneer de toegang wordt geblokkeerd door een <code>.htaccess</code> bestand. Ontwikkelaars voegen een lijst met toegestane IP's toe, maar ze vergeten het IP-adres van de server toe te voegen om HTTP aanvragen naar zichzelf toe te staan."
+
+#: includes/Admin/Troubleshooting.php:285
+msgid "Go to <a href=\"%s\" target=\"_blank\">Tools -> Site Health</a> in your WordPress. You should see issues related to REST API or Loopback request. Expand descriptions of these errors and follow the instructions. Probably you will need to contact your hosting provider to solve it."
+msgstr "Ga naar <a href=\"%s\" target=\"_blank\">Tools - > Site Health</a> in je WordPress. Je zou problemen moeten zien met betrekking tot REST API of Loopback aanvraag. Vouw de beschrijvingen van deze fouten uit en volg de instructies. Waarschijnlijk moet je contact opnemen met je hostingprovider om het op te lossen."
+
+#: includes/Admin/Troubleshooting.php:284
+msgid "Your server can't send an HTTP request to itself"
+msgstr "Je server kan zichzelf geen HTTP aanvraag sturen"
+
+#: includes/Settings.php:657
+msgid "New plugin name"
+msgstr "Nieuwe plugin naam"
+
+#: includes/Settings.php:653
+msgid "Read more"
+msgstr "Lees verder"
+
+#: includes/Settings.php:651
+msgid "AJAX Search for WooCommerce rebrands to FiboSearch"
+msgstr "AJAX Zoeken naar WooCommerce verandert in FiboSearch"
+
+#: includes/Settings.php:647
+msgid "News"
+msgstr "Nieuws"
+
+#: includes/Settings.php:601
+msgid "Schedule time"
+msgstr "Plan tijd"
+
+#: includes/Settings.php:124
+msgid "with simple tricks"
+msgstr "met simpele trucs"
+
+#: includes/EmbeddingViaMenu.php:150
+msgid "Add FiboSearch as a menu item."
+msgstr "Voeg FiboSearch toe als een menu-item."
+
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:55
+msgid "Note: We currently only support the header type: \"Header 10\""
+msgstr "Opmerking: we ondersteunen momenteel alleen het header type: 'Header 10'"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:59
+#: includes/Integrations/Themes/Shopical/Shopical.php:57
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:57
+#: includes/Integrations/Themes/Bridge/Bridge.php:57
+#: includes/Integrations/Themes/Sober/Sober.php:57
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:75
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:57
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:57
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:54
+#: includes/Integrations/Themes/The7/The7.php:60
+#: includes/Integrations/Themes/Storefront/Storefront.php:58
+#: includes/Integrations/Themes/Avada/Avada.php:60
+#: includes/Integrations/Themes/Savoy/Savoy.php:57
+#: includes/Integrations/Themes/Restoration/Restoration.php:59
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:57
+#: includes/Integrations/Themes/Enfold/Enfold.php:64
+#: includes/Integrations/Themes/Divi/Divi.php:75
+#: includes/Abstracts/ThemeIntegration.php:63
+msgid "Replace all %s search bars with the %s."
+msgstr "Vervang alle %s zoekbalken door de %s."
+
+#: includes/Admin/Troubleshooting.php:470
+msgid "TranslatePress"
+msgstr "TranslatePress"
+
+#: includes/Admin/Troubleshooting.php:232
+msgid "Due to the way the TranslatePress - Multilingual plugin works, we can only provide support for it in the <a href=\"%s\" target=\"_blank\">Pro version</a>."
+msgstr "Vanwege de manier waarop de TranslatePress - Meertalige plugin werkt, kunnen we hiervoor alleen ondersteuning bieden in de <a href=\"%s\" target=\"_blank\">Pro-versie</a>."
+
+#: includes/Admin/Troubleshooting.php:223
+msgid "You are using TranslatePress with Free version of our plugin"
+msgstr "Je gebruikt TranslatePress met de gratis versie van onze plugin"
+
+#: includes/Admin/Troubleshooting.php:200
+#: includes/Admin/Troubleshooting.php:204
+msgid "You use the %s plugin. The %s does not support this plugin."
+msgstr "Je gebruikt de %s plugin. De %s ondersteunt deze plugin niet."
+
+#: includes/Admin/Promo/Upgrade.php:54
+msgid "FiboSearch Pro - Upgrade Now"
+msgstr "FiboSearch Pro - Nu upgraden"
+
+#: includes/Admin/Promo/Upgrade.php:52
+msgid "Individual tips and support by FiboSearch team"
+msgstr "Individuele tips en ondersteuning door het FiboSearch team"
+
+#: includes/Admin/Promo/Upgrade.php:48
+msgid "Modern search engine based on an inverted index and advanced matching algorithms"
+msgstr "Moderne zoekmachine gebaseerd op een omgekeerde index en geavanceerde matching algoritmen"
+
+#: includes/Admin/AdminMenu.php:28 includes/Admin/AdminMenu.php:29
+msgid "FiboSearch"
+msgstr "FiboSearch"
+
+#: ajax-search-for-woocommerce.php:177
+msgid "%s is enabled but not effective. It requires %s in order to work."
+msgstr "%s is ingeschakeld maar niet effectief. Het vereist %s om te kunnen werken."
+
+#: ajax-search-for-woocommerce.php:157
+msgid "%s: You need PHP version at least 7.0 to run this plugin. You are currently using PHP version "
+msgstr "%s: Je hebt PHP versie minimaal 7.0 nodig om deze plugin uit te voeren. Je gebruikt momenteel de PHP versie "
+
+#: includes/EmbeddingViaMenu.php:55 includes/EmbeddingViaMenu.php:156
+#: widget.php:27
+msgid "FiboSearch bar"
+msgstr "FiboSearch balk"
+
+#: partials/admin/how-to-use.php:19
+msgid "Using PHP - %s"
+msgstr "PHP gebruiken - %s"
+
+#: partials/admin/settings.php:27
+msgid "Settings"
+msgstr "Instellingen"
+
+#. Plugin Name of the plugin
+msgid "FiboSearch - AJAX Search for WooCommerce"
+msgstr "FiboSearch - AJAX Search for WooCommerce"
+
+#: includes/Admin/Troubleshooting.php:562
+msgid "Server environment"
+msgstr "Serveromgeving"
+
+#: includes/Admin/SettingsAPI.php:616
+msgid "Add new rule"
+msgstr "Nieuwe regel toevoegen"
+
+#: includes/Admin/SettingsAPI.php:612
+msgid "No rules"
+msgstr "Geen regels"
+
+#: includes/Settings.php:552
+msgid "Exclude from search all products that match conditions"
+msgstr "Sluit van zoeken alle producten uit die aan voorwaarden voldoen"
+
+#: includes/Settings.php:550
+msgid "Filters"
+msgstr "Filters"
+
+#: includes/Settings.php:544
+msgid "Exclude products"
+msgstr "Sluit producten uit"
+
+#: includes/Helpers.php:916
+msgid "Sold by:"
+msgstr "Verkocht door:"
+
+#: includes/Helpers.php:913
+msgid "Vendors"
+msgstr "Verkopers"
+
+#: includes/Helpers.php:906
+msgid "Vendor"
+msgstr "Verkoper"
+
+#: includes/Admin/Troubleshooting.php:458
+msgid "Incompatible \"Searching by Text\" extension in WOOF - WooCommerce Products Filter"
+msgstr "Incompatibele extensie \"Searching by Text\" in WOOF - WooCommerce Products Filter"
+
+#: includes/Admin/Troubleshooting.php:424
+msgid "Extensions should looks like the picture below:"
+msgstr "Extensies zouden eruit moeten zien als de onderstaande afbeelding:"
+
+#: includes/Admin/Troubleshooting.php:423
+msgid "Go to <code>WooCommerce -> Settings -> <a href=\"%s\" target=\"_blank\">Products Filter (tab)</a> -> Extensions (tab)</code>, uncheck <code>Searching by Text</code> extension and save changes."
+msgstr "Ga naar <code>WooCommerce -> Instellingen -> <a href=\"%s\" target=\"_blank\">Productfilter (tabblad)</a> -> Extensies (tabblad)</code>, vink <code>Searching by Text</code> extensie uit en sla de wijzigingen op."
+
+#: includes/Admin/Troubleshooting.php:421
+msgid "Incompatible \"Searching by Text\" extension from WOOF - WooCommerce Products Filter plugin is active"
+msgstr "Incompatibele extensie \"Zoeken op tekst\" van WOOF - WooCommerce Products Filter plugin is actief"
+
+#: includes/EmbeddingViaMenu.php:86
+msgid "Search icon color"
+msgstr "Zoek pictogram kleur"
+
+#: includes/Admin/Troubleshooting.php:463
+msgid "Loopback request"
+msgstr "Loopback aanvraag"
+
+#: includes/Admin/Troubleshooting.php:450
+msgid "Incompatible plugins"
+msgstr "Incompatibele plugins"
+
+#: includes/Admin/Troubleshooting.php:446
+msgid "PHP extensions"
+msgstr "PHP extensies"
+
+#: includes/Admin/Troubleshooting.php:378
+msgid "Your settings should looks like the picture below:"
+msgstr "Je instellingen zouden eruit moeten zien als de onderstaande afbeelding:"
+
+#: includes/Admin/Troubleshooting.php:373
+msgid "Go to <code>WooCommerce -> Settings -> <a href=\"%s\" target=\"_blank\">Products (tab)</a></code> and check option <code>%s</code> and uncheck option <code>%s</code>."
+msgstr "Ga naar<code>WooCommerce -> Instellingen -> <a href=\"%s\" target=\"_blank\">Producten (tabblad)</a></code>en vink optie<code>%s</code> aan en vink optie<code>%s</code>uit."
+
+#: includes/Admin/Troubleshooting.php:371
+#: includes/Admin/Troubleshooting.php:422
+msgid "Solution"
+msgstr "Oplossing"
+
+#: includes/Admin/Troubleshooting.php:370
+#: includes/Admin/Troubleshooting.php:454
+msgid "Incorrect \"Add to cart\" behaviour in WooCommerce settings"
+msgstr "Onjuist \"Toevoegen aan winkelwagen\" gedrag in de WooCommerce instellingen"
+
+#: includes/Admin/Troubleshooting.php:368
+msgid "Enable AJAX add to cart buttons on archives"
+msgstr "Schakel AJAX knoppen voor toevoegen aan winkelwagentje in archieven in"
+
+#: includes/Admin/Troubleshooting.php:367
+msgid "Redirect to the cart page after successful addition"
+msgstr "Doorverwijzen naar de winkelwagen pagina na succesvolle toevoeging"
+
+#: includes/Admin/Troubleshooting.php:343
+msgid "Install the latest version of WordPress for our plugin to work as best it can!"
+msgstr "Installeer de nieuwste versie van WordPress zodat onze plugin zo goed mogelijk werkt."
+
+#: includes/Admin/Troubleshooting.php:340
+msgid "Great! Our plugin works great with this version of WordPress."
+msgstr "Onze plugin werkt goed met deze versie can WordPress."
+
+#: includes/Admin/Troubleshooting.php:331
+#: includes/Admin/Troubleshooting.php:442
+msgid "WordPress version"
+msgstr "WordPress versie"
+
+#: includes/Admin/Troubleshooting.php:301
+msgid "One or more required PHP extensions are missing on your server"
+msgstr "Een of meer vereiste plugin extensies ontbreken op je server"
+
+#: includes/Admin/Troubleshooting.php:283
+msgid "Solutions:"
+msgstr "Oplossingen:"
+
+#: includes/Admin/Troubleshooting.php:281
+msgid "This issue may affect the search results page and e.g. display all products every time"
+msgstr "Dit probleem kan van invloed zijn op de pagina met zoekresultaten en bijv. toon alle producten elke keer"
+
+#: includes/Admin/Troubleshooting.php:279
+msgid "Your site could not complete a loopback request"
+msgstr "Je site kon de loopback aanvraag niet afronden."
+
+#: includes/Admin/Troubleshooting.php:245
+msgid "Your site can perform loopback requests"
+msgstr "Je site kan loopback aanvragen uitvoeren"
+
+#: includes/Admin/Troubleshooting.php:191
+msgid "You are using one or more incompatible plugins"
+msgstr "Je gebruikt een of meer niet compatibele plugins"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:72
+msgid "Warning!"
+msgstr "Waarschuwing!"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:67
+msgid "Go to <code>Appearance -> <a target=\"_blank\" href=\"%s\">Customize</a> -> Header -> Search</code> and enable <code>Predictive Search</code>"
+msgstr "Ga naar<code>Uiterlijk -> <a target=\"_blank\" href=\"%s\">Aanpassen</a> -> Header -> Zoeken</code>en schakel<code>Predictive zoeken in</code>"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:66
+msgid "To replace the search bar you have to enable \"Predictive Search\" option in the Shopkeeper settings."
+msgstr "Om de zoekbalk te vervangen, moet je de \"Predictive zoeken\" optie inschakelen in de Shopkeeper instellingen."
+
+#: partials/themes/salient.php:21
+msgid "Hit enter to search or ESC to close"
+msgstr "Druk op enter om te zoeken of ESC om te sluiten"
+
+#: partials/admin/troubleshooting.php:22
+msgid "Check status again"
+msgstr "Controleer de status opnieuw"
+
+#: partials/admin/troubleshooting.php:18
+msgid "Great! We have not detected any problems that could affect the correct functioning of our plugin."
+msgstr "Super goed! We hebben geen problemen ontdekt die de correcte werking van onze plugin zouden kunnen beïnvloeden."
+
+#: partials/admin/troubleshooting.php:11
+msgid "Processing asynchronous tests..."
+msgstr "Asynchrone tests verwerken..."
+
+#: includes/Settings.php:233
+msgid "px"
+msgstr "px"
+
+#: includes/Settings.php:232
+msgid "Mobile breakpoint"
+msgstr "Mobiel breekpunt"
+
+#: includes/Settings.php:225
+msgid "The search will open in overlay on mobile"
+msgstr "De zoekopdracht wordt geopend in overlay op mobiel"
+
+#: includes/Settings.php:224
+msgid "Overlay on mobile"
+msgstr "Overlay op mobiel"
+
+#: includes/Settings.php:206
+msgid "Layout (beta)"
+msgstr "Lay-out (bèta)"
+
+#: includes/Integrations/Themes/TheGem/TheGem.php:93
+msgid "Replace the TheGem default search"
+msgstr "Vervang de standaardzoekopdracht van TheGem"
+
+#: includes/Integrations/Themes/TheGem/TheGem.php:79
+msgid "TheGem Theme"
+msgstr "TheGem thema"
+
+#: includes/Integrations/Themes/TheGem/TheGem.php:72
+msgid "Replace a search bar in TheGem "
+msgstr "Vervang een zoekbalk in TheGem"
+
+#: includes/Integrations/Themes/Impreza/Impreza.php:46
+msgid "Impreza Theme"
+msgstr "Impreza thema"
+
+#: includes/Integrations/Themes/Impreza/Impreza.php:39
+msgid "Replace Impreza search bar"
+msgstr "Vervang de zoekbalk van Impreza"
+
+#: includes/Integrations/Themes/Impreza/Impreza.php:35
+msgid "Here is <a href=\"%s\" target=\"_blank\">article</a> about how to do it using Impreza child-theme."
+msgstr "Hier is een <a href=\"%s\" target=\"_blank\">artikel</a> over hoe je het kunt doen met Impreza sub-thema."
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:45
+#: includes/Integrations/Themes/Shopical/Shopical.php:43
+#: includes/Integrations/Themes/Bridge/Bridge.php:43
+#: includes/Integrations/Themes/Sober/Sober.php:43
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:61
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:43
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:43
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:43
+#: includes/Integrations/Themes/The7/The7.php:46
+#: includes/Integrations/Themes/Avada/Avada.php:46
+#: includes/Integrations/Themes/Savoy/Savoy.php:43
+#: includes/Integrations/Themes/Restoration/Restoration.php:45
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:43
+#: includes/Integrations/Themes/Enfold/Enfold.php:50
+#: includes/Integrations/Themes/Divi/Divi.php:61
+#: includes/Abstracts/ThemeIntegration.php:49
+msgid "%s Theme"
+msgstr "%s Thema"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:38
+#: includes/Integrations/Themes/Shopical/Shopical.php:36
+#: includes/Integrations/Themes/Bridge/Bridge.php:36
+#: includes/Integrations/Themes/Sober/Sober.php:36
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:54
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:36
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:36
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:36
+#: includes/Integrations/Themes/The7/The7.php:39
+#: includes/Integrations/Themes/Avada/Avada.php:39
+#: includes/Integrations/Themes/Savoy/Savoy.php:36
+#: includes/Integrations/Themes/Restoration/Restoration.php:38
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:36
+#: includes/Integrations/Themes/Enfold/Enfold.php:43
+#: includes/Integrations/Themes/Divi/Divi.php:54
+#: includes/Abstracts/ThemeIntegration.php:42
+msgid "Replace %s search bar"
+msgstr "Vervang %s zoekbalk"
+
+#: includes/EmbeddingViaMenu.php:74 includes/Settings.php:212 widget.php:43
+msgid "Layout"
+msgstr "Lay-out"
+
+#: includes/EmbeddingViaMenu.php:189 includes/Settings.php:217 widget.php:41
+msgid "Icon on mobile, search bar on desktop"
+msgstr "Pictogram op mobiel, zoekbalk op desktop"
+
+#: includes/EmbeddingViaMenu.php:188 includes/Settings.php:216
+#: includes/Settings.php:247 widget.php:40
+msgid "Search icon"
+msgstr "Zoek pictogram"
+
+#: includes/EmbeddingViaMenu.php:187 includes/Settings.php:215 widget.php:39
+msgid "Search bar only"
+msgstr "Alleen zoekbalk"
+
+#: includes/EmbeddingViaMenu.php:186 widget.php:38
+msgid "Default"
+msgstr "Standaard"
+
+#: includes/Admin/RegenerateImages.php:180
+msgid "Regeneration of images started. The process will continue in the background."
+msgstr "De regeneratie van afbeeldingen begon. Het proces wordt op de achtergrond voortgezet."
+
+#: includes/Admin/RegenerateImages.php:102
+msgid "%s: it is recommended to generate a special small image size for existing products to ensure a better user experience. This is a one-time action. <br /><br />You can do it by clicking %s or use an external plugin such as %s."
+msgstr "%s: het wordt aanbevolen om een speciaal klein afbeeldingsformaat te genereren voor bestaande producten om een betere gebruikerservaring te garanderen. Dit is een eenmalige actie.<br /><br /> Je kunt het doen door op %s te klikken of door een externe plugin zoals %s te gebruiken."
+
+#: includes/Admin/RegenerateImages.php:100
+msgid "Regenerate WooCommerce images"
+msgstr "Genereer WooCommerce afbeeldingen opnieuw"
+
+#: partials/admin/search-preview.php:203
+msgid "Add to cart"
+msgstr "Voeg toe aan winkelwagen"
+
+#: partials/admin/how-to-use.php:22
+msgid "Are there any difficulties? <b>We will do it for you!</b> We offer free of charge search bar implementation for Pro users. <a target=\"_blank\" href=\"%s\">Become one now!</a>"
+msgstr "Zijn er moeilijkheden? <b>We zullen het voor je doen! </b> We bieden gratis zoekbalkimplementatie voor Pro-gebruikers. <a target=\"_blank\" href=\"%s\">Word nu een!</a>"
+
+#: partials/admin/how-to-use.php:17
+msgid "Using a shortcode - %s"
+msgstr "Met behulp van een shortcode - %s"
+
+#: partials/admin/features.php:30
+msgid "Individual customization of the search bar (simple CSS improvements)"
+msgstr "Individuele aanpassing van de zoekbalk (eenvoudige CSS-verbeteringen)"
+
+#: partials/admin/features.php:28
+msgid "Search for posts and pages"
+msgstr "Zoek naar berichten en pagina's"
+
+#: partials/admin/features.php:27
+msgid "Search in brands (WooCommerce Brands or YITH WooCommerce Brands)"
+msgstr "Zoeken in merken (WooCommerce Brands of YITH WooCommerce Brands)"
+
+#: partials/admin/features.php:26
+msgid "Search by variation product SKU"
+msgstr "Zoek op product variant SKU"
+
+#: partials/admin/features.php:20
+msgid "Professional and fast <b>help with embedding</b> or <b>replacing</b> the search bar in your theme"
+msgstr "Professionele en snelle <b>hulp met insluiten</b> of <b>vervangen</b> van de zoekbalk in je thema"
+
+#: partials/admin/features.php:19
+msgid "<b>New Ultra-Fast Search Engine</b> – works very fast even with 100,000+ products "
+msgstr "<b>Nieuwe ultrasnelle zoekmachine</b> - werkt erg snel, zelfs met 100.000+ producten"
+
+#: partials/admin/features.php:16
+msgid "Update now and boosts your sales. You will receive <b>30-day satisfaction guarantee</b>.  A return on investment will come very quickly."
+msgstr "Update nu en verhoog je verkoop. Je ontvangt <b>14 dagen tevredenheidsgarantie</b>. Een terugverdientijd is zeer snel."
+
+#: includes/Helpers.php:919
+msgid "continue reading"
+msgstr "lees verder"
+
+#: includes/Settings.php:539
+msgid "Synonyms should be separated by a comma. Each new synonyms group is entered on a new line. You can use a phrase instead of a single word. <br /> <br />Sample list:<br /> <br /><span class=\"dgwt-wcas-synonyms-sample\">sofa, couch, davenport, divan, settee<br />big, grand, great, large, outsize</span>"
+msgstr "Synoniemen moeten worden gescheiden door een komma. Elke nieuwe synoniemengroep wordt op een nieuwe regel ingevoerd. Je kunt een zin gebruiken in plaats van een enkel woord.<br /><br /> Voorbeeldlijst:<br /><br /> <span class=\"dgwt-wcas-synonyms-sample\">sofa, bankstel, davenport, divan, bankstel<br /> groot, groots, groot, groot, buitenmaats</span>"
+
+#: includes/Settings.php:537
+msgid "The synonyms feature allows your users to find more relevant results. If your products have alternative names and users often misspell them, consider adding synonyms."
+msgstr "Met de synoniemenfunctie kunnen je gebruikers relevantere resultaten vinden. Als je producten alternatieve namen hebben en gebruikers ze vaak verkeerd spellen, overweeg dan om synoniemen toe te voegen."
+
+#: includes/Admin/Promo/Upgrade.php:50 includes/Settings.php:531
+#: includes/Settings.php:537 partials/admin/features.php:29
+msgid "Synonyms"
+msgstr "Synoniemen"
+
+#: includes/Settings.php:505 partials/admin/features.php:25
+msgid "Search in tags"
+msgstr "Zoek in tags"
+
+#. Description of the plugin
+msgid "The most popular WooCommerce product search. Gives your users a well-designed advanced AJAX search bar with live search suggestions."
+msgstr "De meest populaire WooCommerce product zoekopdracht. Geeft je gebruikers een goed ontworpen geavanceerde AJAX-zoekbalk met live zoeksuggesties."
+
+#: includes/EmbeddingViaMenu.php:178
+msgid "FiboSearch bar will be displayed here."
+msgstr "De FiboSearch balk wordt hier weergegeven."
+
+#: includes/EmbeddingViaMenu.php:166 includes/EmbeddingViaMenu.php:167
+msgid "Add to menu"
+msgstr "Toevoegen aan menu"
+
+#: includes/Settings.php:595
+msgid "weekly"
+msgstr "wekelijks"
+
+#: includes/Settings.php:594
+msgid "daily"
+msgstr "dagelijks"
+
+#: includes/Settings.php:590
+msgid "Interval"
+msgstr "Interval"
+
+#: includes/Settings.php:582
+msgid "In most cases, you don't need to use the scheduler because the search index updates when you edit products. If you use import tools or custom code to refresh prices or bulk add/edit products, the indexing scheduler will be helpful."
+msgstr "In de meeste gevallen hoeft je de planner niet te gebruiken omdat de zoekindex wordt geüpdatet wanneer je producten bewerkt. Als je import gereedschappen of aangepaste code gebruikt om prijzen te vernieuwen of producten bulksgewijs toe te voegen/bewerken, is de indexering planner nuttig."
+
+#: includes/Settings.php:582
+msgid "Enable Scheduler"
+msgstr "Schakel planner in"
+
+#: includes/Settings.php:576
+msgid "Scheduling indexing"
+msgstr "Planning indexering "
+
+#: includes/Settings.php:152
+msgid "How to add?"
+msgstr "Hoe toe te voegen?"
+
+#: partials/admin/how-to-use.php:16
+msgid "Menu Screen"
+msgstr "Menuscherm"
+
+#: partials/admin/how-to-use.php:16
+msgid "As a menu item - go to the %s and add the menu item “FiboSearch bar”. Done!"
+msgstr "Als een menu-item - ga naar de %s en voeg het menu-item \"FiboSearch balk\" toe. Gedaan!"
+
+#: includes/Settings.php:610
+msgid "returns suggestions based on likely relevance, even though a search keyword may not exactly match. E.g if you type “ipho<b>m</b>e” you get the same results as for “iphone”"
+msgstr "retourneert suggesties op basis van waarschijnlijke relevantie, ook al komt een keyword mogelijk niet exact overeen. Als je bijvoorbeeld \"ipho <b>m</b> e\" typt, krijg je dezelfde resultaten als voor \"iphone\""
+
+#: includes/Settings.php:609
+msgid "Increases sales conversions"
+msgstr "Verhoogt verkoopconversies"
+
+#: includes/Settings.php:498 partials/admin/features.php:24
+msgid "Search in categories"
+msgstr "Zoek in categorieën"
+
+#: includes/Settings.php:423
+msgid "Suggestions colors"
+msgstr "Suggestie kleuren"
+
+#: includes/Settings.php:416
+msgid "Show Details panel"
+msgstr "Toon detail paneel"
+
+#: includes/Settings.php:410
+msgid "Details panel"
+msgstr "Details paneel"
+
+#: includes/Settings.php:403
+msgid "Show pages"
+msgstr "Toon pagina's"
+
+#: includes/Settings.php:396
+msgid "Show posts"
+msgstr "Toon berichten"
+
+#: includes/Settings.php:389
+msgid "Show tags"
+msgstr "Toon tags"
+
+#: includes/Settings.php:382
+msgid "Show categories"
+msgstr "Toon categorieën"
+
+#: includes/Settings.php:376
+msgid "Non-products in autocomplete"
+msgstr "Niet-producten in auto aanvullen"
+
+#: includes/Settings.php:370
+msgid "More results label"
+msgstr "Meer resultatenlabel"
+
+#: includes/Settings.php:333
+msgctxt "admin"
+msgid "No results label"
+msgstr "Geen resultatenlabel"
+
+#: includes/Settings.php:325
+msgid "Group results"
+msgstr "Groepsresultaten"
+
+#: includes/Settings.php:317
+msgid "Limit"
+msgstr "Begrenzing"
+
+#: includes/Settings.php:193
+msgid "Submit label"
+msgstr "Verzend label"
+
+#: includes/Settings.php:171
+msgid "Min characters to show autocomplete"
+msgstr "Min tekens om automatisch aanvullen weer te geven"
+
+#: includes/Settings.php:146
+msgid "How to add search bar in your theme?"
+msgstr "Hoe voeg je een zoekbalk toe aan je thema?"
+
+#: includes/Settings.php:119
+msgid "Indexer"
+msgstr "Indexer"
+
+#: includes/Settings.php:108
+msgid "Search config"
+msgstr "Zoek config"
+
+#: includes/Settings.php:96
+msgid "Starting"
+msgstr "Beginnend"
+
+#: includes/Helpers.php:917
+msgid "Featured"
+msgstr "Uitgelicht"
+
+#: includes/Helpers.php:915
+msgid "Sale"
+msgstr "Uitverkoop"
+
+#: includes/Integrations/Themes/Storefront/Storefront.php:37
+msgid "Replace Storefront search bar"
+msgstr "Vervang de zoekbalk van Storefront"
+
+#: includes/Integrations/Themes/Impreza/Impreza.php:60
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:81
+#: includes/Integrations/Themes/Shopical/Shopical.php:64
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:64
+#: includes/Integrations/Themes/Bridge/Bridge.php:64
+#: includes/Integrations/Themes/Sober/Sober.php:64
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:82
+#: includes/Integrations/Themes/TheGem/TheGem.php:100
+#: includes/Integrations/Themes/TheGem/TheGem.php:108
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:64
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:64
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:67
+#: includes/Integrations/Themes/The7/The7.php:67
+#: includes/Integrations/Themes/Storefront/Storefront.php:65
+#: includes/Integrations/Themes/Avada/Avada.php:67
+#: includes/Integrations/Themes/Savoy/Savoy.php:64
+#: includes/Integrations/Themes/Restoration/Restoration.php:66
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:64
+#: includes/Integrations/Themes/Enfold/Enfold.php:71
+#: includes/Integrations/Themes/Divi/Divi.php:82
+#: includes/Abstracts/ThemeIntegration.php:70
+msgid "Alternative ways to embed a search bar"
+msgstr "Alternatieve manieren om een ​​zoekbalk in te sluiten"
+
+#: includes/Integrations/Themes/Shopkeeper/Shopkeeper.php:58
+#: includes/Integrations/Themes/Shopical/Shopical.php:56
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:56
+#: includes/Integrations/Themes/Bridge/Bridge.php:56
+#: includes/Integrations/Themes/Sober/Sober.php:56
+#: includes/Integrations/Themes/Woodmart/Woodmart.php:74
+#: includes/Integrations/Themes/TheGem/TheGem.php:92
+#: includes/Integrations/Themes/Ekommart/Ekommart.php:56
+#: includes/Integrations/Themes/ShopIsle/ShopIsle.php:56
+#: includes/Integrations/Themes/DFDRonneby/DFDRonneby.php:59
+#: includes/Integrations/Themes/The7/The7.php:59
+#: includes/Integrations/Themes/Storefront/Storefront.php:57
+#: includes/Integrations/Themes/Avada/Avada.php:59
+#: includes/Integrations/Themes/Savoy/Savoy.php:56
+#: includes/Integrations/Themes/Restoration/Restoration.php:58
+#: includes/Integrations/Themes/BlockShop/BlockShop.php:56
+#: includes/Integrations/Themes/Enfold/Enfold.php:63
+#: includes/Integrations/Themes/Divi/Divi.php:74
+#: includes/Abstracts/ThemeIntegration.php:62
+msgid "Replace"
+msgstr "Vervangen"
+
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:36
+msgid "Replace Flatsome search bar"
+msgstr "Vervang de zoekbalk van Flatsome"
+
+#: includes/Integrations/Brands.php:207
+msgid "Show brands"
+msgstr "Toon merken"
+
+#: partials/admin/embedding-in-theme.php:20
+msgid "We support this theme and you can easily replace all default search bars."
+msgstr "We ondersteunen dit thema en je kan eenvoudig alle standaard zoekbalken vervangen."
+
+#: partials/admin/embedding-in-theme.php:19
+msgid "You use the <b>%s</b> theme%s. Fantastic!"
+msgstr "Je gebruikt het <b>%s</b> thema%s. Fantastisch!"
+
+#: partials/admin/embedding-in-theme.php:16
+msgid "child theme of <b>%s</b>"
+msgstr "sub-thema van <b>%s</b>"
+
+#: partials/admin/search-preview.php:178
+msgid "Sample product name"
+msgstr "Voorbeeld productnaam"
+
+#: partials/admin/search-preview.php:144 partials/admin/search-preview.php:189
+msgid "Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Quisque gravida lacus nec diam porttitor pharetra. Nulla facilisi. Proin pharetra imperdiet neque, non varius."
+msgstr "Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipiscing elit. Quisque gravida lacus neg slidem porttitor pharetra. Nulla facilisi. Proin pharetra imperdiet neque, niet varius."
+
+#: includes/Helpers.php:914
+msgid "SKU"
+msgstr "SKU"
+
+#: partials/admin/search-preview.php:142
+msgid "Sample product <strong>name</strong>"
+msgstr "Voorbeeldproduct <strong>name</strong>"
+
+#: includes/Settings.php:339 includes/Helpers.php:909
+msgid "Products"
+msgstr "Producten"
+
+#: partials/admin/search-preview.php:126
+msgid "Sample page <strong>name</strong>"
+msgstr "Voorbeeldpagina <strong>name</strong>"
+
+#: includes/Helpers.php:905
+msgid "Page"
+msgstr "Pagina"
+
+#: includes/Helpers.php:912
+msgid "Pages"
+msgstr "Pagina's"
+
+#: partials/admin/search-preview.php:113
+msgid "Sample post <strong>name</strong>"
+msgstr "Voorbeeldbericht <strong>name</strong>"
+
+#: includes/Helpers.php:904
+msgid "Post"
+msgstr "Bericht"
+
+#: includes/Helpers.php:911
+msgid "Posts"
+msgstr "Berichten"
+
+#: partials/admin/search-preview.php:100
+msgid "Sample tag <strong>name</strong>"
+msgstr "Voorbeeld tag <strong>name</strong>"
+
+#: includes/Helpers.php:908
+msgid "Tags"
+msgstr "Tags"
+
+#: partials/admin/search-preview.php:87
+msgid "Sample category <strong>name</strong>"
+msgstr "Voorbeeldcategorie <strong>name</strong>"
+
+#: includes/Helpers.php:907
+msgid "Categories"
+msgstr "Categorieën"
+
+#: partials/admin/search-preview.php:74
+msgid "Sample brand <strong>name</strong>"
+msgstr "Voorbeeld merk <strong>name</strong>"
+
+#: includes/Helpers.php:910
+msgid "Brands"
+msgstr "Merken"
+
+#: includes/Settings.php:104 partials/admin/search-preview.php:24
+msgid "Autocomplete"
+msgstr "Automatisch aanvullen"
+
+#: includes/EmbeddingViaMenu.php:247 includes/Settings.php:100
+#: partials/admin/search-preview.php:23
+msgid "Search bar"
+msgstr "Zoekbalk"
+
+#: partials/admin/search-preview.php:22
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: includes/Settings.php:372 includes/Helpers.php:921 includes/Helpers.php:922
+msgid "See all products..."
+msgstr "Bekijk alle producten..."
+
+#: partials/admin/settings.php:32 partials/admin/settings.php:34
+msgid "Show advanced settings"
+msgstr "Toon geavanceerde instellingen"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://fibosearch.com?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc"
+msgstr "https://fibosearch.com?utm_source=wp-admin&utm_medium=referral&utm_campaign=author_uri&utm_gen=utmdc"
+
+#: partials/admin/how-to-use.php:18
+msgid "As a widget - go to the %s and choose “FiboSearch bar”"
+msgstr "Als widget - ga naar de %s en kies \"FiboSearch balk\""
+
+#: partials/admin/how-to-use.php:14
+msgid "There are four easy ways to display the search bar in your theme"
+msgstr "Er zijn vier eenvoudige manieren om de zoekbalk in je thema weer te geven"
+
+#: includes/Integrations/Themes/Flatsome/Flatsome.php:43
+msgid "Flatsome Theme"
+msgstr "Flatsome thema"
+
+#: includes/Integrations/Brands.php:179 includes/Integrations/Brands.php:202
+msgid "based on the plugin %s"
+msgstr "gebaseerd op de plugin %s"
+
+#: includes/Integrations/Brands.php:184
+msgid "Search in brands"
+msgstr "Zoek in merken"
+
+#: includes/Settings.php:512 partials/admin/features.php:22
+msgid "Search in custom fields"
+msgstr "Zoek in aangepaste velden"
+
+#: includes/Settings.php:466
+msgid "Products search scope"
+msgstr "Producten zoeken bereik"
+
+#: includes/Admin/Promo/Upgrade.php:63 partials/admin/features.php:31
+msgid "See a comparison of all free and premium features!"
+msgstr "Bekijk een vergelijking van alle gratis en premium functies!"
+
+#: includes/Admin/SettingsAPI.php:708
+msgid "Showcase"
+msgstr "Showcase"
+
+#: includes/Helpers.php:903
+msgid "Brand"
+msgstr "Merk"
+
+#: includes/Settings.php:486
+msgid "Searching in variable products SKU is available only in <a target=\"_blank\" href=\"%s\">the pro version</a>."
+msgstr "Zoeken in variabele producten SKU is alleen beschikbaar in <a target=\"_blank\" href=\"%s\">de pro-versie</a>."
+
+#: partials/admin/indexer-header-demo.php:16
+msgid "Show details"
+msgstr "Toon details"
+
+#: partials/admin/indexer-header-demo.php:11
+msgid "The search index does not exist yet. Build it now."
+msgstr "De zoekopdracht index bestaat nog niet. Bouw het nu."
+
+#: partials/admin/features.php:33
+msgid "Upgrade Now!"
+msgstr "Waardeer nu op!"
+
+#: partials/admin/features.php:31
+msgid "And more..."
+msgstr "En meer..."
+
+#: partials/admin/features.php:14
+msgid "If users can’t find the product they’re searching for, they can’t buy it. Help your customers to find the right products even <span>10× faster</span>."
+msgstr "Als gebruikers het product dat ze zoeken niet kunnen vinden, kunnen ze het niet kopen. Help je klanten om nog <span>10 × sneller</span> de juiste producten te vinden."
+
+#: includes/Settings.php:632
+msgid "Index status"
+msgstr "Index status"
+
+#: includes/Settings.php:625
+msgid "Hard"
+msgstr "Hard"
+
+#: includes/Settings.php:624
+msgid "Normal"
+msgstr "Normaal"
+
+#: includes/Settings.php:623
+msgid "Soft"
+msgstr "Zacht"
+
+#: includes/Settings.php:622
+msgid "-- Disabled"
+msgstr "- Uitgeschakeld"
+
+#: includes/Settings.php:617
+msgid "Fuzzy matching"
+msgstr "Fuzzy matching"
+
+#: includes/Settings.php:570
+msgid "Speed up search!"
+msgstr "Versnel zoeken !"
+
+#: includes/Settings.php:525
+msgid "Fuzziness"
+msgstr "Vaagheid"
+
+#: includes/Settings.php:564
+msgid "Pro features"
+msgstr "Pro-functies"
+
+#: includes/Settings.php:491 partials/admin/features.php:23
+msgid "Search in attributes"
+msgstr "Zoeken in attributen"
+
+#: includes/Settings.php:486
+msgid "searching also in variable products SKU"
+msgstr "ook zoeken in variabele producten SKU"
+
+#: includes/Settings.php:484
+msgid "Search in SKU"
+msgstr "Zoeken in SKU"
+
+#: includes/Settings.php:478
+msgid "Search in short description"
+msgstr "Zoeken in korte beschrijving"
+
+#: includes/Settings.php:472
+msgid "Search in description"
+msgstr "Zoek in de beschrijving"
+
+#: includes/Settings.php:124
+msgid "Increase sales"
+msgstr "Verhoog de omzet"
+
+#: includes/Admin/Troubleshooting.php:309
+#: includes/Admin/Troubleshooting.php:312
+msgid "Required PHP extension: %s"
+msgstr "Vereiste PHP-extensie: %s"
+
+#: includes/Admin/Promo/Upgrade.php:65
+msgid "Upgrade Now"
+msgstr "Waardeer nu op"
+
+#: includes/Admin/Promo/Upgrade.php:58
+msgid "Update now and increase your sales. You will receive 30-day satisfaction guarantee.  A return on investment will come very quickly."
+msgstr "Update nu en verhoog je omzet. Je krijgt 30 dagen tevredenheidsgarantie. De investering zal snel worden terugverdiend."
+
+#: includes/Admin/Promo/Upgrade.php:63
+msgid "and more..."
+msgstr "en meer..."
+
+#: includes/Admin/Promo/Upgrade.php:51
+msgid "Search in attributes and variation products SKUs (option)"
+msgstr "Zoeken in attributen en variatieproducten SKU's (optie)"
+
+#: includes/Admin/Promo/Upgrade.php:49 partials/admin/features.php:21
+msgid "Fuzzy search"
+msgstr "Fuzzy zoeken"
+
+#: includes/Admin/Promo/Upgrade.php:47
+msgid "Speed up search! (even 10× faster) - users love it!"
+msgstr "Sneller zoeken! (zelfs 10 × sneller) - gebruikers zijn er dol op!"
+
+#: includes/Admin/SettingsAPI.php:706
+msgid "Contact"
+msgstr "Contact"
+
+#: includes/Helpers.php:918
+msgctxt "in categories fe. in Books > Crime stories"
+msgid "in"
+msgstr "in"
+
+#: includes/Integrations/Themes/Storefront/Storefront.php:44
+msgid "Storefront Theme"
+msgstr "Storefront thema"
+
+#: partials/admin/indexer-header-demo.php:15
+msgid "Build index"
+msgstr "Bouw index"
+
+#: includes/Settings.php:179
+msgid "To set 100% width leave blank"
+msgstr "Als je 100% breedte wilt instellen, laat je dit veld leeg"
+
+#: includes/Settings.php:176
+msgid "Max form width"
+msgstr "Maximale formulier breedte"
+
+#: includes/Settings.php:241
+msgid "Colors"
+msgstr "Kleuren"
+
+#: includes/Helpers.php:475 includes/Helpers.php:478
+msgid "Pro"
+msgstr "Pro"
+
+#: includes/Admin/Troubleshooting.php:44 includes/Admin/Troubleshooting.php:63
+msgid "Troubleshooting"
+msgstr "Probleem onderzoeken"
+
+#: includes/Admin/Promo/FeedbackNotice.php:88
+msgid "No thanks"
+msgstr "Nee, dank je"
+
+#: includes/Admin/Promo/FeedbackNotice.php:84
+msgid "Review %s"
+msgstr "Beoordeel %s"
+
+#: includes/Admin/Promo/FeedbackNotice.php:78
+msgid "The FiboSearch team have spent countless hours developing it, and it would mean a lot to me if you %ssupport it with a quick review on WordPress.org.%s"
+msgstr "Het FiboSearch-team heeft talloze uren besteed aan het ontwikkelen ervan, en het zou veel voor mij betekenen als je %s het zou ondersteunen met een korte beoordeling op WordPress.org.%s"
+
+#: includes/Admin/Promo/FeedbackNotice.php:73
+msgid "Hey %s, it's Damian Góra from %s. You have used this free plugin for some time now, and I hope you like it!"
+msgstr "Hallo %s, dit is Damian Góra van %s. Je hebt deze gratis plugin nu een tijd gebruikt, ik hoop dat het je bevalt!"
+
+#: includes/Settings.php:335 includes/Helpers.php:920
+msgid "No results"
+msgstr "Geen resultaten"
+
+#: includes/Settings.php:364
+msgid "Show SKU"
+msgstr "SKU weergeven"
+
+#: includes/Settings.php:519
+msgid "Exclude “out of stock” products"
+msgstr "Sluit producten die \"niet op voorraad\" zijn uit"
+
+#. Author of the plugin
+msgid "Damian Góra"
+msgstr "Damian Góra"
+
+#: widget.php:32
+msgid "Title"
+msgstr "Titel"
+
+#: widget.php:25
+msgid "AJAX (live) search form for WooCommerce"
+msgstr "AJAX (live) zoeken formulier WooCommerce"
+
+#: partials/search-form.php:30 partials/admin/search-preview.php:34
+msgid "Products search"
+msgstr "Producten zoeken"
+
+#: includes/Helpers.php:902
+msgid "Tag"
+msgstr "Label"
+
+#: includes/Helpers.php:901
+msgid "Category"
+msgstr "Categorie"
+
+#: partials/admin/how-to-use.php:18
+msgid "Widgets Screen"
+msgstr "Widgets scherm"
+
+#: includes/Settings.php:302
+msgid "Upload preloader image"
+msgstr "Upload preloader afbeelding"
+
+#: includes/Settings.php:295
+msgid "Show preloader"
+msgstr "Toon preloader"
+
+#: includes/Settings.php:289
+msgid "Preloader"
+msgstr "preloader"
+
+#: includes/Settings.php:457
+msgid "Border color"
+msgstr "Randkleur"
+
+#: includes/Settings.php:450
+msgid "Highlight color"
+msgstr "Markeer kleur"
+
+#: includes/Settings.php:443
+msgid "Text color"
+msgstr "Tekst kleur"
+
+#: includes/Settings.php:436
+msgid "Suggestion selected"
+msgstr "Suggestie geselecteerd"
+
+#: includes/Settings.php:429
+msgid "Suggestion background"
+msgstr "Suggestie achtergrond"
+
+#: includes/Settings.php:282
+msgid "Search submit text"
+msgstr "Zoek verzend tekst"
+
+#: includes/Settings.php:275
+msgid "Search submit background"
+msgstr "Achtergrond zoek verzenden"
+
+#: includes/Settings.php:268
+msgid "Search input border"
+msgstr "Zoek invoer rand"
+
+#: includes/Settings.php:261
+msgid "Search input text"
+msgstr "Zoek invoertekst"
+
+#: includes/Settings.php:254
+msgid "Search input background"
+msgstr "Zoek ingave achtergrond"
+
+#: includes/Settings.php:357
+msgid "Show product description"
+msgstr "Toon product beschrijving"
+
+#: includes/Settings.php:351
+msgid "Show price"
+msgstr "Toon prijs"
+
+#: includes/Settings.php:345
+msgid "Show product image"
+msgstr "Toon product afbeelding"
+
+#: includes/Settings.php:416
+msgid "The Details panel is an additional container for extended information. The details are changed dynamically when a user mouse over one of the suggestions."
+msgstr "Het Detail paneel is een extra container voor uitgebreide informatie. De details worden dynamisch gewijzigd wanneer een gebruiker met de muis over een van de suggesties beweegt."
+
+#: includes/Settings.php:202 includes/Helpers.php:923
+msgid "Search for products..."
+msgstr "Zoeken naar producten ..."
+
+#: includes/Settings.php:200
+msgid "Search input placeholder"
+msgstr "Zoek invoer plaatshouder"
+
+#: includes/Settings.php:196 partials/search-form.php:46
+#: partials/themes/ekommart.php:21
+msgid "Search"
+msgstr "Zoeken"
+
+#: includes/Settings.php:193
+msgid "To display the magnifier icon leave this field empty."
+msgstr "Laat dit veld leeg om een ​​vergrootglas pictogram weer te geven."
+
+#: includes/Settings.php:185
+msgid "Show submit button"
+msgstr "Toon verzendknop"
+
+#: includes/Settings.php:167
+msgid "Minimum characters"
+msgstr "Minimum tekens"
+
+#: includes/Settings.php:320
+msgid "maximum number of suggestions"
+msgstr "maximum aantal suggesties"
+
+#: includes/Settings.php:161 includes/Settings.php:311
+msgid "Basic"
+msgstr "Basis"
+
+#: includes/Admin/SettingsAPI.php:507
+msgid "Choose File"
+msgstr "Kies bestand"

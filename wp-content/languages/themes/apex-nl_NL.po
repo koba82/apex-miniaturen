@@ -1,0 +1,596 @@
+# Translation of Themes - Apex in Dutch
+# This file is distributed under the same license as the Themes - Apex package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-05-12 12:01:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: nl\n"
+"Project-Id-Version: Themes - Apex\n"
+
+#. Description of the theme
+msgid "Apex is a sophisticated, minimalist theme. It looks great and performs wonderfully on mobile devices, tablets, laptops, and everything in between. Use it to setup a business blog, newspaper website, fashion magazine, or travel blog. Now with WooCommerce support, you can even setup an eCommerce store with Apex. The design of this minimal theme also suits media-rich sites well like food blogs and personal photography portfolios. As a simple, responsive, and SEO optimized theme, you can trust Apex to present your best content to the world. Apex is also fully compatible with the new Gutenberg post editor. Preview Apex now with the interactive live demo: https://www.competethemes.com/demos/?theme=apex"
+msgstr "Apex is een verfijnd, minimalistisch thema. Het ziet er geweldig uit en presteert geweldig op mobiele apparaten, tablets, laptops en alles daartussenin. Gebruik het om een ​​zakelijke blog, krantensite, modetijdschrift of reisblog op te zetten. Nu met WooCommerce ondersteuning, kan je zelfs een eCommerce winkel opzetten met Apex. Het ontwerp van dit minimale thema past ook goed bij mediarijke sites zoals foodblogs en persoonlijke fotografie portfolio's. Als een eenvoudig, responsive en voor SEO geoptimaliseerd thema, kan je erop vertrouwen dat Apex je beste inhoud aan de wereld presenteert. Apex is ook volledig compatibel met de nieuwe berichteditor van Gutenberg. Bekijk Apex nu met de interactieve live demo:https://www.competethemes.com/demos/?theme=apex"
+
+#. Theme Name of the theme
+msgid "Apex"
+msgstr "Apex"
+
+#. Template Name of the theme
+msgid "Landing Page"
+msgstr "Bestemmingspagina"
+
+#. Template Name of the theme
+msgid "Landing Page with Header"
+msgstr "Bestemmingspagina met header"
+
+#: inc/customizer.php:282
+msgid "Custom icon 3 size (px)"
+msgstr "Aangepast pictogram 3 grootte (px)"
+
+#: inc/customizer.php:272
+msgid "Custom icon 3 image"
+msgstr "Aangepast pictogram 3 afbeelding"
+
+#: inc/customizer.php:262
+msgid "Custom icon 3 URL"
+msgstr "Aangepast pictogram 3 URL"
+
+#: inc/customizer.php:252
+msgid "Custom icon 3 Name"
+msgstr "Aangepast pictogram 3 Naam"
+
+#: inc/customizer.php:241
+msgid "Custom icon 2 size (px)"
+msgstr "Aangepast formaat pictogram 2 (px)"
+
+#: inc/customizer.php:231
+msgid "Custom icon 2 image"
+msgstr "Aangepast pictogram 2 afbeelding"
+
+#: inc/customizer.php:221
+msgid "Custom icon 2 URL"
+msgstr "Aangepast pictogram 2 URL"
+
+#: inc/customizer.php:211
+msgid "Custom icon 2 Name"
+msgstr "Aangepast pictogram 2 Naam"
+
+#: inc/customizer.php:200
+msgid "Custom icon 1 size (px)"
+msgstr "Aangepast formaat pictogram 1 (px)"
+
+#: inc/customizer.php:190
+msgid "Custom icon 1 image"
+msgstr "Aangepast pictogram 1 afbeelding"
+
+#: inc/customizer.php:180
+msgid "Custom icon 1 URL"
+msgstr "Aangepast pictogram 1 URL"
+
+#: inc/customizer.php:170
+msgid "Custom icon 1 Name"
+msgstr "Aangepast pictogram 1 Naam"
+
+#: inc/customizer.php:95
+msgid "IMDB"
+msgstr "IMDB"
+
+#: inc/customizer.php:93
+msgid "diaspora*"
+msgstr "diaspora*"
+
+#: footer.php:15
+msgid "<a href=\"%1$s\" rel=\"nofollow\">%2$s WordPress Theme</a> by Compete Themes"
+msgstr "<a href=\"%1$s\" rel=\"nofollow\">%2$s WordPress Theme</a> door Compete Themes."
+
+#: inc/customizer.php:97
+msgid "ResearchGate"
+msgstr "ResearchGate"
+
+#: inc/customizer.php:439
+msgid "Show the Featured Image caption on the post page?"
+msgstr "Het bijschrift van de uitgelichte afbeelding op het berichtpagina weergeven?"
+
+#: functions.php:812
+msgid "Last updated on"
+msgstr "Laatst geüpdatet op"
+
+#: inc/last-updated-meta-box.php:36
+msgid "Don't show the date"
+msgstr "Laat de datum niet zien"
+
+#: inc/last-updated-meta-box.php:32
+msgid "Show the date"
+msgstr "Laat de datum zien"
+
+#: inc/last-updated-meta-box.php:29
+msgid "Use Customizer setting"
+msgstr "Gebruik de Customizer instelling"
+
+#: inc/last-updated-meta-box.php:12
+msgid "Last Updated Date"
+msgstr "Datum laatst geüpdatet"
+
+#: inc/customizer.php:423
+msgid "Display the date each post was last updated?"
+msgstr "De datum weergeven waarop elk bericht voor het laatst is geüpdatet?"
+
+#: functions.php:84
+msgid "XL"
+msgstr "XL"
+
+#: functions.php:83
+msgid "larger"
+msgstr "groter"
+
+#: functions.php:78
+msgid "L"
+msgstr "L."
+
+#: functions.php:77
+msgid "large"
+msgstr "groot"
+
+#: functions.php:72
+msgid "M"
+msgstr "M."
+
+#: functions.php:71
+msgid "regular"
+msgstr "regelmatig"
+
+#: functions.php:66
+msgid "S"
+msgstr "S"
+
+#: functions.php:65
+msgid "small"
+msgstr "klein"
+
+#: inc/customizer.php:407
+msgid "Display Scroll-to-top arrow?"
+msgstr "Toon scroll naar boven pijl?"
+
+#: inc/customizer.php:129
+msgid "Contact Form"
+msgstr "Contact formulier"
+
+#: inc/customizer.php:127
+msgid "Stack Overflow"
+msgstr "Stack Overflow"
+
+#: inc/customizer.php:125
+msgid "PayPal"
+msgstr "PayPal"
+
+#: inc/customizer.php:123
+msgid "Tencent Weibo"
+msgstr "Tencent Weibo"
+
+#: inc/customizer.php:121
+msgid "WeChat"
+msgstr "WeChat"
+
+#: inc/customizer.php:119
+msgid "OK.ru"
+msgstr "OK.ru"
+
+#: inc/customizer.php:117
+msgid "VK"
+msgstr "VK"
+
+#: inc/customizer.php:115
+msgid "QQ"
+msgstr "QQ"
+
+#: inc/customizer.php:113
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: inc/customizer.php:111
+msgid "Hacker News"
+msgstr "Hacker Nieuws"
+
+#: inc/customizer.php:109
+msgid "Google Wallet"
+msgstr "Google wallet"
+
+#: inc/customizer.php:107
+msgid "DeviantArt"
+msgstr "DeviantArt"
+
+#: inc/customizer.php:105
+msgid "StumbleUpon"
+msgstr "StumbleUpon"
+
+#: inc/customizer.php:103
+msgid "CodePen"
+msgstr "CodePen"
+
+#: inc/customizer.php:101
+msgid "SlideShare"
+msgstr "SlideShare"
+
+#: inc/customizer.php:99
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: inc/customizer.php:91
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/customizer.php:81
+msgid "Phone"
+msgstr "Telefoon"
+
+#: functions.php:793
+msgid "Scroll to the top"
+msgstr "Scroll naar boven"
+
+#. Template Name of the theme
+msgid "Full-width"
+msgstr "Volledige breedte"
+
+#: inc/review.php:113
+msgid "Click here to leave your review"
+msgstr "Klik hier om je beoordeling achter te laten"
+
+#: functions.php:21
+msgid "Hey! Sorry to interrupt, but you've been using Apex for a little while now. If you're happy with this theme, could you take a minute to leave a review? <i>You won't see this notice again after closing it.</i>"
+msgstr "Sorry dat ik stoor, maar je gebruikt Apex nu al een tijdje. Als je tevreden bent met dit thema, kan je dan even de tijd nemen om een ​​recensie achter te laten?<i>Je zult dit bericht niet meer zien nadat je het hebt gesloten.</i>"
+
+#: theme-options.php:5 theme-options.php:6 theme-options.php:26
+msgid "%s Dashboard"
+msgstr "%s Dashboard"
+
+#: inc/scripts.php:20
+msgctxt "verb: close the  dropdown menu"
+msgid "close dropdown menu"
+msgstr "sluit dropdown menu"
+
+#: inc/scripts.php:18
+msgctxt "verb: close the menu"
+msgid "close menu"
+msgstr "sluit menu"
+
+#: inc/customizer.php:391
+msgid "Display comments link after posts?"
+msgstr "Toon reacties link na berichten?"
+
+#: inc/customizer.php:317
+msgctxt "noun: the blog section"
+msgid "Blog"
+msgstr "Blog"
+
+#: header.php:32 inc/scripts.php:17
+msgctxt "verb: open the menu"
+msgid "open menu"
+msgstr "open menu"
+
+#: inc/scripts.php:19 functions.php:544
+msgctxt "verb: open the dropdown menu"
+msgid "open dropdown menu"
+msgstr "open dropdown menu"
+
+#: functions.php:482
+msgctxt "noun"
+msgid "email"
+msgstr "e-mail"
+
+#: functions.php:205
+msgctxt "noun"
+msgid "Comment"
+msgstr "Reactie"
+
+#: functions.php:177
+msgctxt "noun"
+msgid "Email"
+msgstr "E-mail"
+
+#: functions.php:170
+msgctxt "noun"
+msgid "Name"
+msgstr "Naam"
+
+#: functions.php:153
+msgctxt "verb: edit this comment"
+msgid "Edit"
+msgstr "Bewerk"
+
+#: functions.php:149
+msgctxt "verb: reply to this comment"
+msgid "Reply"
+msgstr "Antwoord"
+
+#: content/post-categories.php:17
+msgctxt "View all posts in post category"
+msgid "View all posts in %s"
+msgstr "Bekijk alle berichten in %s"
+
+#: content/post-categories.php:15
+msgid "and"
+msgstr "en"
+
+#: content/post-categories.php:10
+msgctxt "Published in post category"
+msgid "Published in"
+msgstr "Gepubliceerd in"
+
+#: content/post-byline.php:12
+msgctxt "Published on a date BY this author"
+msgid "by"
+msgstr "door"
+
+#: content/post-byline.php:5
+msgctxt "Published on this date"
+msgid "Published %s"
+msgstr "Gepubliceerd %s"
+
+#: content/archive-header.php:10
+msgctxt "noun: Site Title's Posts"
+msgid "Posts"
+msgstr "Berichten"
+
+#: comments.php:10 content/comments-link.php:9 content/comments-link.php:12
+msgctxt "noun: 5 comments"
+msgid "% Comments"
+msgstr "% Reacties"
+
+#: functions.php:841 functions.php:846
+msgid "Next"
+msgstr "Verder"
+
+#: functions.php:840 functions.php:845
+msgid "Previous"
+msgstr "Vorige"
+
+#: inc/customizer.php:142
+msgid "Accepts Skype link protocol (<a href=\"%s\" target=\"_blank\">learn more</a>)"
+msgstr "Accepteert het Skype link protocol (<a href=\"%s\" target=\"_blank\">meer informatie</a>)"
+
+#: inc/customizer.php:375
+msgid "Display post author name in byline?"
+msgstr "Naam van auteur van bericht weergeven in naamregel?"
+
+#: inc/customizer.php:365
+msgid "Additional Options"
+msgstr "Additionele Opties"
+
+#: inc/customizer.php:355
+msgid "Read More button text"
+msgstr "Lees meer knoptekst"
+
+#: inc/customizer.php:343
+msgid "Excerpt word count"
+msgstr "Samenvatting aantal woorden"
+
+#: inc/customizer.php:304
+msgid "Show search bar at top of site?"
+msgstr "Zoekbalk bovenaan site weergeven?"
+
+#: inc/customizer.php:293
+msgid "Search Bar"
+msgstr "Zoekbalk"
+
+#: functions.php:165
+msgid "(optional)"
+msgstr "(niet verplicht)"
+
+#: content/search-bar.php:12
+msgid "Search..."
+msgstr "Zoeken..."
+
+#: inc/customizer.php:69
+msgid "Email Address"
+msgstr "E-mailadres"
+
+#: inc/customizer.php:55
+msgid "Add the URL for each of your social profiles."
+msgstr "Voeg de URL toe voor elk van je sociale profielen."
+
+#: inc/customizer.php:26
+msgid "Logo"
+msgstr "Logo"
+
+#: searchform.php:6
+msgid "Go"
+msgstr "Ga"
+
+#: searchform.php:5 content/search-bar.php:13
+msgid "Search for:"
+msgstr "Zoek naar:"
+
+#: searchform.php:3 content/search-bar.php:11
+msgid "Search"
+msgstr "Zoek"
+
+#: search.php:36
+msgid "Can't find what you're looking for?  Try refining your search:"
+msgstr "Kun je niet vinden wat je zoekt? Probeer andere zoektermen:"
+
+#: search.php:11
+msgid "No search results for \"%s\""
+msgstr "Geen zoekresultaten voor \"%s\""
+
+#: search.php:9
+msgid "%1$d search result for \"%2$s\""
+msgid_plural "%1$d search results for \"%2$s\""
+msgstr[0] "%1$d zoekresultaat voor\"%2$s\""
+msgstr[1] "%1$d zoekresultaten voor\"%2$s\""
+
+#: inc/customizer.php:309 inc/customizer.php:493
+msgid "Hide"
+msgstr "Verbergen"
+
+#: inc/customizer.php:308 inc/customizer.php:492
+msgid "Show"
+msgstr "Tonen"
+
+#: inc/customizer.php:476
+msgid "Add Custom CSS Here:"
+msgstr "Voeg hier aangepaste CSS toe:"
+
+#: inc/customizer.php:465
+msgid "Custom CSS"
+msgstr "Handmatige CSS"
+
+#: inc/customizer.php:333 inc/customizer.php:381 inc/customizer.php:397
+#: inc/customizer.php:413 inc/customizer.php:429 inc/customizer.php:445
+#: inc/customizer.php:511
+msgid "No"
+msgstr "Nee"
+
+#: inc/customizer.php:332 inc/customizer.php:380 inc/customizer.php:396
+#: inc/customizer.php:412 inc/customizer.php:428 inc/customizer.php:444
+#: inc/customizer.php:510
+msgid "Yes"
+msgstr "Ja"
+
+#: inc/customizer.php:327
+msgid "Show full posts on blog?"
+msgstr "Volledige berichten op blog weergeven?"
+
+#: inc/customizer.php:53
+msgid "Social Media Icons"
+msgstr "Social Media Icons"
+
+#: inc/customizer.php:37
+msgid "Upload custom logo."
+msgstr "Upload je eigen logo."
+
+#: header.php:17
+msgid "Skip to content"
+msgstr "Naar de inhoud springen"
+
+#: functions.php:620
+msgid "Customizer settings deleted."
+msgstr "Customizer instellingen verwijderd."
+
+#: functions.php:557
+msgid "Featured Post"
+msgstr "Uitgelicht bericht"
+
+#: inc/customizer.php:350 functions.php:240 functions.php:304
+msgid "Continue reading"
+msgstr "Lees verder"
+
+#: functions.php:184
+msgid "Website"
+msgstr "Site"
+
+#: functions.php:141
+msgid "Your comment is awaiting moderation."
+msgstr "Jouw reactie is in afwachting van moderatie."
+
+#: functions.php:116
+msgid "Widgets in this area will be shown in the sidebar next to the main post content"
+msgstr "Widgets in dit gebied worden weergegeven in de zijbalk naast de inhoud van het hoofdbericht"
+
+#: functions.php:114
+msgid "Primary Sidebar"
+msgstr "Primaire zijbalk"
+
+#: functions.php:91
+msgid "Primary"
+msgstr "Primaire"
+
+#: content-page.php:12 templates/full-width.php:22 content.php:14
+msgid "Pages:"
+msgstr "Pagina's:"
+
+#: content/post-tags.php:8
+msgid "View all posts tagged %s"
+msgstr "Bekijk alle artikelen getagd %s"
+
+#: content/post-nav.php:27
+msgid "No Newer Posts"
+msgstr "Geen nieuwere berichten"
+
+#: content/post-nav.php:24
+msgid "The Next Post"
+msgstr "Het volgende artikel"
+
+#: content/post-nav.php:23
+msgid "Next Post"
+msgstr "Volgend bericht"
+
+#: content/post-nav.php:14 content/post-nav.php:28
+msgid "Return to Blog"
+msgstr "Terug naar blog"
+
+#: content/post-nav.php:13
+msgid "No Older Posts"
+msgstr "Geen oudere berichten"
+
+#: content/post-nav.php:10
+msgid "The Previous Post"
+msgstr "Het vorige artikel"
+
+#: content/post-nav.php:9
+msgid "Previous Post"
+msgstr "Vorig bericht"
+
+#: content/post-nav-attachment.php:6
+msgid "Next Image"
+msgstr "Volgende afbeelding"
+
+#: content/post-nav-attachment.php:3
+msgid "Previous Image"
+msgstr "Vorige afbeelding"
+
+#: content/comments-link.php:12
+msgid "Leave a Comment"
+msgstr "Een reactie plaatsen"
+
+#: content/comments-link.php:9 content/comments-link.php:12
+msgid "1 Comment"
+msgstr "Één reactie"
+
+#: content/comments-link.php:9
+msgid "Comments closed"
+msgstr "Reacties gesloten"
+
+#: content/comments-link.php:6
+msgid "comment icon"
+msgstr "reactie pictogram"
+
+#: comments.php:37
+msgid "Comments are closed."
+msgstr "Reacties zijn gesloten."
+
+#. translators: placeholder is link to the trackback URL
+#: comments.php:32
+msgid "Comments are closed, but <a href=\"%s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
+msgstr "Je kunt geen reactie plaatsen, maar <a href=\"%s\" title=\"Trackback URL for this post\">trackbacks</a> en pingbacks zijn beschikbaar."
+
+#: comments.php:10
+msgid "One Comment"
+msgstr "Een reactie"
+
+#: comments.php:10
+msgid "Be First to Comment"
+msgstr "Wees de eerste om te reageren"
+
+#: 404.php:9
+msgid "Looks like nothing was found on this url.  Double-check that the url is correct or try the search form below to find what you were looking for."
+msgstr "Er kon niets gevonden worden op deze url. Controleer of de url correct is of probeer het zoekveld om te vinden wat je zoekt."
+
+#: 404.php:6
+msgid "404: Page Not Found"
+msgstr "404: pagina niet gevonden"
+
+#. Author URI of the theme
+msgid "https://www.competethemes.com/"
+msgstr "https://www.competethemes.com/"
+
+#. Author of the theme
+msgid "Compete Themes"
+msgstr "Compete Themes"
+
+#. Theme URI of the theme
+msgid "https://www.competethemes.com/apex/"
+msgstr "https://www.competethemes.com/apex/"
