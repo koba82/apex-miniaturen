@@ -1063,7 +1063,6 @@ header.woocommerce-products-header {
 .products .product {
 	position: relative;
 	margin-bottom: 1.4em;
-    border:1px solid rgb(225,225,225);
 	border-radius: var(--card-border-radius);
 	padding: 0;
 }
@@ -1087,19 +1086,9 @@ header.woocommerce-products-header {
 }
 
 .columns-4.products .product {
-	margin: 0;
+	margin: 0 0 var(--gutter-md) 0;
 	flex: 0 0 calc(100% / 3);
-	border-right: 0;
-	border-top: 0;
 	border-radius: 0;
-}
-
-.lister-page .columns-4.products .product:nth-of-type(3n), .lister-page .columns-4.products .product:last-of-type {
-	border-right:1px solid rgb(225,225,225);
-}
-
-.lister-page .columns-4.products .product:nth-of-type(1), .lister-page .products .product:nth-of-type(2), .lister-page .products .product:nth-of-type(3)  {
-	border-top:1px solid rgb(225,225,225);
 }
 
 .woocommerce-result-count, .woocommerce-ordering {
@@ -1526,12 +1515,7 @@ ul.woocommerce-error {
 
 .sl-image {
 	overflow: hidden;
-	border-radius: var(--bor-radius-md);
-}
-
-.card .content-image-wrap {
-	--card-content-image-margin: calc( -1 * var(--card-padding) );
-	margin: var(--card-content-image-margin) var(--card-content-image-margin) 0 var(--card-content-image-margin);
+		border-radius: var(--bor-radius-md);
 }
 
 table.content-table {
@@ -1568,8 +1552,6 @@ table.content-table {
 	margin-top: var(--gutter-sm);
 	font-size: .9em;
 }
-
-
 
 @media screen and (max-width: 1150px) {
 
