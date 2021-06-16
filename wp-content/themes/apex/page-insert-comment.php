@@ -10,9 +10,9 @@ get_header(); ?>
 
     <?php
 
-    $products = getProductInfo();
-    $f1YouTube = json_decode(file_get_contents(ABSPATH . '/ports/json/youtube-f1-grand-prix.json'), true);
-
+    //$products = getProductInfo();
+    //$f1YouTube = json_decode(file_get_contents(ABSPATH . '/ports/json/youtube-f1-grand-prix.json'), true);
+    echo storeProductInfo();
 
     //var_dump($products);
 
@@ -30,39 +30,39 @@ get_header(); ?>
 //
 //
 
-
-        foreach($products as $product) :
-
-            if($product['event'] && $product['year']) :
-
-                if(array_key_exists($product['event'], $f1YouTube) && array_key_exists($product['year'], $f1YouTube[$product['event']])) :
-
-                    $vidID = $f1YouTube[$product['event']][$product['year']][0];
-
-                    $fieldArray = [
-                            array('acf_fc_layout' => 'flex-youtube',
-                                'content-header-text' => [  'content-header' => $product['event'] . ' ' . $product['year'],
-                                                            'content-text' => '',
-                                                            'icon-select' => '-'],
-                                'flex-youtube-iframe' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $vidID . '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-                                'flex-options' => [ 'flex-bgc-select' => 'geen',
-                                    'flex-publish' => true,
-                                    'flex-start-date-option' => false,
-                                    'flex-end-date-option' => NULL,
-                                ])
-
-                                        ];
-                    $post = $product['id'];
-                    $source = get_field('flex', $post);
-                    $source[] = $fieldArray;
+//
+//        foreach($products as $product) :
+//
+//            if($product['event'] && $product['year']) :
+//
+//                if(array_key_exists($product['event'], $f1YouTube) && array_key_exists($product['year'], $f1YouTube[$product['event']])) :
+//
+//                    $vidID = $f1YouTube[$product['event']][$product['year']][0];
+//
+//                    $fieldArray = [
+//                            array('acf_fc_layout' => 'flex-youtube',
+//                                'content-header-text' => [  'content-header' => $product['event'] . ' ' . $product['year'],
+//                                                            'content-text' => '',
+//                                                            'icon-select' => '-'],
+//                                'flex-youtube-iframe' => '<iframe width="560" height="315" src="https://www.youtube.com/embed/' . $vidID . '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+//                                'flex-options' => [ 'flex-bgc-select' => 'geen',
+//                                    'flex-publish' => true,
+//                                    'flex-start-date-option' => false,
+//                                    'flex-end-date-option' => NULL,
+//                                ])
+//
+//                                        ];
+//                    $post = $product['id'];
+//                    $source = get_field('flex', $post);
+//                    $source[] = $fieldArray;
 
                     //var_dump(update_field('flex', $fieldArray, $post));
 
-                endif;
-
-            endif;
-
-        endforeach;
+//                endif;
+//
+//            endif;
+//
+//        endforeach;
 
 //    $fieldArray = [ array('acf_fc_layout' => 'flex-text',
 //        'flex-text-header' => 'Michael Schumacher Benetton B193',
@@ -93,7 +93,7 @@ get_header(); ?>
 //
 //    ];
 
-        var_dump(update_field('flex_1_flex-text-block', "This is a test", '8782'));
+        //var_dump(update_field('flex_1_flex-text-block', "This is a test", '8782'));
 
 
 

@@ -77,15 +77,22 @@ function woocommerce_render_meta_field()
 
     $inputGDJ = array(
         'id' => '_cop_gdj',
-        'label' => 'Inkoopprijs GDJ',
+        'label' => 'Inkoopprijs Geerligs & De Jong',
         'value' => get_post_meta(get_the_ID(), '_cop_gdj', true)
     );
 
     $inputMCW = array(
         'id' => '_cop_mcw',
-        'label' => 'Inkoopprijs MCW',
+        'label' => 'Inkoopprijs Model Car Wholesale',
         'value' => get_post_meta(get_the_ID(), '_cop_mcw', true)
     );
+
+    $inputDCC = array(
+        'id' => '_cop_dcc',
+        'label' => 'Inkoopprijs The Diecast Company',
+        'value' => get_post_meta(get_the_ID(), '_cop_dcc', true)
+    );
+
     $inputBevro = array(
         'id' => '_cop_bev',
         'label' => 'Inkoopprijs Bevro',
@@ -93,18 +100,24 @@ function woocommerce_render_meta_field()
     );
     $inputGDJstock = array(
         'id' => '_stock_gdj',
-        'label' => 'Voorraad GDJ',
+        'label' => 'Voorraad Geerligs & De Jong',
         'value' => get_post_meta(get_the_ID(), '_stock_gdj', true)
     );
     $inputMCWstock = array(
         'id' => '_stock_mcw',
-        'label' => 'Voorraad MCW',
+        'label' => 'Voorraad Model Car Wholesale',
         'value' => get_post_meta(get_the_ID(), '_stock_mcw', true)
     );
     $inputBevroStock = array(
         'id' => '_stock_bev',
         'label' => 'Voorraad Bevro',
         'value' => get_post_meta(get_the_ID(), '_stock_bev', true)
+    );
+
+    $inputDCCstock = array(
+        'id' => '_stock_dcc',
+        'label' => 'Voorraad Diecast Company',
+        'value' => get_post_meta(get_the_ID(), '_stock_dcc', true)
     );
 
     ?>
@@ -129,6 +142,15 @@ function woocommerce_render_meta_field()
     </div>
     <div id="cop_attr" style="background: rgb(225,255,255)" class="options_group">
         <?php woocommerce_wp_text_input($inputBevroStock); ?>
+    </div>
+    <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
+        <?php woocommerce_wp_text_input($inputDCC); ?>
+    </div>
+    <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
+        <?php woocommerce_wp_text_input($inputDCCstock); ?>
+    </div>
+    <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
+        <?php woocommerce_wp_text_input($inputDCCstock); ?>
     </div>
 
     <?php
@@ -892,7 +914,8 @@ function storeProductInfo()
     $currMinute = intval(date('i'));
     $message = '';
     $subject = '';
-    if ($currHour == 15 && $currMinute > 15 && $currMinute < 25) :
+    //if ($currHour == 15 && $currMinute > 15 && $currMinute < 25) :
+    if ($currMinute > 15 && $currMinute < 25) :
         $info = getProductInfo();
 
         if (file_put_contents(ABSPATH . '/ports/current_products/products.json', json_encode($info))) :
@@ -918,6 +941,8 @@ function storeProductInfo()
         remove_action('phpmailer_init', 'send_smtp_email');
 
     endif;
+
+    return $subject . ' ' . $message;
 
 }
 
