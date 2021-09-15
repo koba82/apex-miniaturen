@@ -877,6 +877,9 @@ function getAllProductIds()
  * SKU, ID, Stock
  */
 
+
+define('CSV_DEFAULT_ENTRY', json_decode(file_get_contents(ABSPATH . '/ports/json/csv-default-entry.json'), true));
+
 function getProductInfo()
 {
 
@@ -887,17 +890,60 @@ function getProductInfo()
         'post_status' => 'publish',
         'fields' => 'ids',
     ));
+    $counter = 0;
+    var_dump(CSV_DEFAULT_ENTRY);
 
     foreach ($all_ids as $id) {
 
-        $wooProduct = wc_get_product($id);
-        $sku = $wooProduct->get_sku();
 
-        $ids[strval($sku)]['id'] = $id;
-        $ids[strval($sku)]['stock'] = $wooProduct->get_stock_quantity();
-        $ids[strval($sku)]['year'] = $wooProduct->get_attribute( 'pa_jaar' );
-        $ids[strval($sku)]['event'] = $wooProduct->get_attribute( 'pa_evenement' );
-        $ids[strval($sku)]['driver'] = $wooProduct->get_attribute( 'pa_coureur' );
+        if($counter < 9999999 ) :
+
+            $wooProduct = wc_get_product($id);
+            $custom = get_post_custom($id);
+            $sku = $wooProduct->get_sku();
+
+            $ids[$sku] = CSV_DEFAULT_ENTRY;
+            $ids[$sku]['wp_id'] = $id;
+            $ids[$sku]['Stock'] = $wooProduct->get_stock_quantity();
+            $ids[$sku]['SKU'] = $sku;
+            $ids[$sku]['Name'] = $wooProduct->get_name();
+            $ids[$sku]['Attribute 1 value(s)'] = $wooProduct->get_attribute( 'pa_coureur' );
+            $ids[$sku]['Attribute 2 value(s)'] = $wooProduct->get_attribute( 'pa_merk' );
+            $ids[$sku]['Attribute 3 value(s)'] = $wooProduct->get_attribute( 'pa_typeaanduiding' );
+            $ids[$sku]['Attribute 4 value(s)'] = $wooProduct->get_attribute( 'pa_fabrikant' );
+            $ids[$sku]['Attribute 5 value(s)'] = $wooProduct->get_attribute( 'pa_schaal' );
+            $ids[$sku]['Attribute 6 value(s)'] = $wooProduct->get_attribute( 'pa_jaar' );
+            $ids[$sku]['Attribute 7 value(s)'] = $wooProduct->get_attribute( 'pa_evenement' );
+            $ids[$sku]['Attribute 8 value(s)'] = $wooProduct->get_attribute( 'original_category' );
+            $ids[$sku]['Attribute 9 value(s)'] = $wooProduct->get_attribute( 'ID' );
+            $ids[$sku]['Attribute 10 value(s)'] = $wooProduct->get_attribute( 'GDJ URL' );
+            $ids[$sku]['Attribute 11 value(s)'] = $wooProduct->get_attribute( 'BEV URL' );
+            $ids[$sku]['Attribute 12 value(s)'] = $wooProduct->get_attribute( 'DCC URL' );
+            $ids[$sku]['Attribute 13 value(s)'] = $wooProduct->get_attribute( 'MCW URL' );
+
+            $ids[$sku]['Regular price'] = $custom['_regular_price'][0];
+            $ids[$sku]['Sale price'] = $custom['_sale_price'][0];
+            $ids[$sku]['meta:_price_save'] = $custom['_price_save'][0];
+            $ids[$sku]['meta:_original_sku'] = $custom['__original_sku'][0];
+            $ids[$sku]['meta:_cop_gdj'] = $custom['_cop_gdj'][0];
+            $ids[$sku]['meta:_stock_gdj'] = $custom['_stock_gdj'][0];
+            $ids[$sku]['meta:_cop_mcw'] = $custom['_cop_mcw'][0];
+            $ids[$sku]['meta:_stock_mcw'] = $custom['_stock_mcw'][0];
+            $ids[$sku]['meta:_cop_bev'] = $custom['_cop_bev'][0];
+            $ids[$sku]['meta:_stock_bev'] = $custom['_stock_bev'][0];
+            $ids[$sku]['meta:_cop_dcc'] = $custom['_cop_dcc'][0];
+            $ids[$sku]['meta:_stock_dcc'] = $custom['_stock_dcc'][0];
+
+//            echo '<div class="content-wrap"><div class="content"><pre>';
+//            var_dump($custom);
+//
+//            echo '</pre></div></div>';
+
+        endif;
+
+        $counter++;
+
+
     }
 
     return $ids;
@@ -910,12 +956,12 @@ function getProductInfo()
 
 function storeProductInfo()
 {
-    $currHour = intval(date('H'));
-    $currMinute = intval(date('i'));
+    $currHour = date('H');
+    $currMinute = date('i');
     $message = '';
     $subject = '';
     //if ($currHour == 15 && $currMinute > 15 && $currMinute < 25) :
-    if ($currMinute > 15 && $currMinute < 25) :
+    if ($currMinute > 0 && $currMinute < 55) :
         $info = getProductInfo();
 
         if (file_put_contents(ABSPATH . '/ports/current_products/products.json', json_encode($info))) :
@@ -931,14 +977,18 @@ function storeProductInfo()
 
         endif;
 
+        echo $subject . $message;
+        echo '<pre>';
+        //var_dump($info);
+        echo '</pre>';
         //Send notification mail
-        add_filter('wp_mail_content_type', 'set_my_mail_content_type');
-        add_action('phpmailer_init', 'send_smtp_email');
-
-        wp_mail('info@envisic.nl', $subject, $message);
-
-        remove_filter('wp_mail_content_type', 'set_my_mail_content_type');
-        remove_action('phpmailer_init', 'send_smtp_email');
+//        add_filter('wp_mail_content_type', 'set_my_mail_content_type');
+//        add_action('phpmailer_init', 'send_smtp_email');
+//
+//        wp_mail('info@envisic.nl', $subject, $message);
+//
+//        remove_filter('wp_mail_content_type', 'set_my_mail_content_type');
+//        remove_action('phpmailer_init', 'send_smtp_email');
 
     endif;
 

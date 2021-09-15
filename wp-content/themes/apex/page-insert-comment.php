@@ -12,7 +12,7 @@ get_header(); ?>
 
     //$products = getProductInfo();
     //$f1YouTube = json_decode(file_get_contents(ABSPATH . '/ports/json/youtube-f1-grand-prix.json'), true);
-    echo storeProductInfo();
+    storeProductInfo();
 
     //var_dump($products);
 
