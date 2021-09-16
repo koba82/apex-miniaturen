@@ -512,6 +512,14 @@ form input:not([type=submit]), form select, form textarea {
 	left: var(--gutter-md);
 }
 
+.image-reel {
+	display: flex;
+}
+
+.image-reel .flickity-viewport {
+	width: 100%;
+}
+
 .image-reel .content-image {
 	height: var(--prod-thumb-size);
 	width: var(--prod-thumb-size);
