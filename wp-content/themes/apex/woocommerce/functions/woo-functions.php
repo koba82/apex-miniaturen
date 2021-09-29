@@ -70,9 +70,15 @@ add_filter('body_class', 'add_class_to_pdp');
 function woocommerce_render_meta_field()
 {
     $savePrice = array(
-        'id' => '_save_price',
+        'id' => '_price_save',
         'label' => 'Bespaar',
-        'value' => get_post_meta(get_the_ID(), '_save_price', true)
+        'value' => get_post_meta(get_the_ID(), '_price_save', true)
+    );
+
+    $original_sku = array(
+        'id' => '_original_sku',
+        'label' => 'Oorspronkelijke SKU',
+        'value' => get_post_meta(get_the_ID(), '_original_sku', true)
     );
 
     $inputGDJ = array(
@@ -113,11 +119,30 @@ function woocommerce_render_meta_field()
         'label' => 'Voorraad Bevro',
         'value' => get_post_meta(get_the_ID(), '_stock_bev', true)
     );
-
     $inputDCCstock = array(
         'id' => '_stock_dcc',
         'label' => 'Voorraad Diecast Company',
         'value' => get_post_meta(get_the_ID(), '_stock_dcc', true)
+    );
+    $inputGDJ_URL = array(
+        'id' => '_url_gdj',
+        'label' => 'URL Geerligs & De Jong',
+        'value' => get_post_meta(get_the_ID(), '_url_gdj', true)
+    );
+    $inputMCW_URL = array(
+        'id' => '_url_mcw',
+        'label' => 'URL Model Car Wholesale',
+        'value' => get_post_meta(get_the_ID(), '_url_mcw', true)
+    );
+    $inputBevro_URL = array(
+        'id' => '_url_bev',
+        'label' => 'URL Bevro',
+        'value' => get_post_meta(get_the_ID(), '_url_bev', true)
+    );
+    $inputDCC_URL = array(
+        'id' => '_url_dcc',
+        'label' => 'URL Diecast Company',
+        'value' => get_post_meta(get_the_ID(), '_url_dcc', true)
     );
 
     ?>
@@ -125,11 +150,17 @@ function woocommerce_render_meta_field()
     <div id="save_price" class="options_group">
         <?php woocommerce_wp_text_input($savePrice); ?>
     </div>
+    <div id="original_sku" class="options_group">
+        <?php woocommerce_wp_text_input($original_sku); ?>
+    </div>
     <div id="cop_attr" style="background: rgb(225,225,255)" class="options_group">
         <?php woocommerce_wp_text_input($inputGDJ); ?>
     </div>
     <div id="cop_attr" style="background: rgb(225,225,255)" class="options_group">
         <?php woocommerce_wp_text_input($inputGDJstock); ?>
+    </div>
+    <div id="cop_attr" style="background: rgb(225,225,255)" class="options_group">
+        <?php woocommerce_wp_text_input($inputGDJ_URL); ?>
     </div>
     <div id="cop_attr" style="background: rgb(255,225,225)" class="options_group">
         <?php woocommerce_wp_text_input($inputMCW); ?>
@@ -137,11 +168,17 @@ function woocommerce_render_meta_field()
     <div id="cop_attr" style="background: rgb(255,225,225)" class="options_group">
         <?php woocommerce_wp_text_input($inputMCWstock); ?>
     </div>
+    <div id="cop_attr" style="background: rgb(255,225,225)" class="options_group">
+        <?php woocommerce_wp_text_input($inputMCW_URL); ?>
+    </div>
     <div id="cop_attr" style="background: rgb(225,255,255)" class="options_group">
         <?php woocommerce_wp_text_input($inputBevro); ?>
     </div>
     <div id="cop_attr" style="background: rgb(225,255,255)" class="options_group">
         <?php woocommerce_wp_text_input($inputBevroStock); ?>
+    </div>
+    <div id="cop_attr" style="background: rgb(225,255,255)" class="options_group">
+        <?php woocommerce_wp_text_input($inputBevro_URL); ?>
     </div>
     <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
         <?php woocommerce_wp_text_input($inputDCC); ?>
@@ -150,7 +187,7 @@ function woocommerce_render_meta_field()
         <?php woocommerce_wp_text_input($inputDCCstock); ?>
     </div>
     <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
-        <?php woocommerce_wp_text_input($inputDCCstock); ?>
+        <?php woocommerce_wp_text_input($inputDCC_URL); ?>
     </div>
 
     <?php
@@ -890,13 +927,12 @@ function getProductInfo()
         'post_status' => 'publish',
         'fields' => 'ids',
     ));
+
     $counter = 0;
-    var_dump(CSV_DEFAULT_ENTRY);
 
     foreach ($all_ids as $id) {
 
-
-        if($counter < 9999999 ) :
+        if($counter < 99999999999999999999 ) :
 
             $wooProduct = wc_get_product($id);
             $custom = get_post_custom($id);
@@ -934,16 +970,9 @@ function getProductInfo()
             $ids[$sku]['meta:_cop_dcc'] = $custom['_cop_dcc'][0];
             $ids[$sku]['meta:_stock_dcc'] = $custom['_stock_dcc'][0];
 
-//            echo '<div class="content-wrap"><div class="content"><pre>';
-//            var_dump($custom);
-//
-//            echo '</pre></div></div>';
-
         endif;
 
         $counter++;
-
-
     }
 
     return $ids;
