@@ -242,15 +242,12 @@
 	}
 	add_action('admin_init', 'wpb_imagelink_setup', 10);
 
-	// Add SVG support (or rather remove SVG restriction)
-	function custom_upload_mimes ( $existing_mimes=array() ) {
-
-	// add the file extension to the array
-	$existing_mimes['svg'] = 'mime/type';
-
-	// call the modified list of extensions
-	return $existing_mimes;
-}
+    function enable_svg_upload( $upload_mimes ) {
+        $upload_mimes['svg'] = 'image/svg+xml';
+        $upload_mimes['svgz'] = 'image/svg+xml';
+        return $upload_mimes;
+    }
+    add_filter( 'upload_mimes', 'enable_svg_upload', 10, 1 );
 
 //**********************************************************************************************************************
 //	ACF options page
