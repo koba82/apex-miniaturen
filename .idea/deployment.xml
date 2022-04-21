@@ -5,7 +5,7 @@
       <paths name="ApMin-Vimexx">
         <serverdata>
           <mappings>
-            <mapping deploy="/domains/apex-miniaturen.nl/public_html" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/domains/apexminiaturen.nl/public_html" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
             <excludedPath path="/domains/apex-miniaturen.nl/public_html/ports" />

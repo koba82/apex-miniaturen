@@ -65,6 +65,54 @@ add_filter('body_class', 'add_class_to_pdp');
 
 
 /**
+ * PDP Wrappers
+ */
+if(!function_exists('custom_before_single_product_summary_wrap_open_tag')) :
+    function custom_before_single_product_summary_wrap_open_tag() {
+        echo '<section class="row gallery-and-summary-wrap"><div class="block woo-product-image-gallery-wrap colspan-8"><div class="content">';
+    }
+    add_action('woocommerce_before_single_product_summary', 'custom_before_single_product_summary_wrap_open_tag', 3);
+endif;
+
+if(!function_exists('custom_after_single_product_summary_wrap_close_tag')) :
+    function custom_after_single_product_summary_wrap_close_tag() {
+        echo '</div></div></section>';
+    }
+    add_action('woocommerce_after_single_product_summary', 'custom_after_single_product_summary_wrap_close_tag', 3);
+endif;
+
+if(!function_exists('custom_before_single_product_summary_open_tag')) :
+    function custom_before_single_product_summary_open_tag() {
+        echo '</div></div><div class="block summary entry-summary colspan-4">';
+    }
+    add_action('woocommerce_single_product_summary', 'custom_before_single_product_summary_open_tag', 3);
+endif;
+
+/**
+ * Cart Wrappers
+ */
+if(!function_exists('custom_before_woocommerce_before_cart_tag')) :
+    function custom_before_woocommerce_before_cart_tag() {
+        echo '<section class="row car-row"><div class="block cart-table"><div class="content">';
+    }
+    add_action('woocommerce_before_cart', 'custom_before_woocommerce_before_cart_tag', 4);
+endif;
+
+if(!function_exists('custom_before_woocommerce_before_cart_collaterals_tag')) :
+    function custom_before_woocommerce_before_cart_collaterals_tag() {
+        echo '</div></div><div class="block cart-collaterals colspan-3"><div class="content">';
+    }
+    add_action('woocommerce_before_cart_collaterals', 'custom_before_woocommerce_before_cart_collaterals_tag', 4);
+endif;
+
+if(!function_exists('custom_after_woocmmerce_after_cart_tag')) :
+    function custom_after_woocmmerce_after_cart_tag() {
+        echo '</section>';
+    }
+    add_action('woocommerce_after_cart', 'custom_after_woocmmerce_after_cart_tag', 4);
+endif;
+
+/**
  * Add the Custom fields for Products in WooCommerce backend (COP)
  */
 function woocommerce_render_meta_field()
