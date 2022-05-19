@@ -1,0 +1,46 @@
+/*
+*   Base bar, bottom of header, full page width with background
+*/
+
+.nav-main{
+    position: absolute;
+    display:flex;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    background: var(--pri-color);
+    --icon-color: var(--con-color);
+}
+
+.scroll-offset .nav-main {
+    position: fixed;
+    width: 100%;
+    bottom: auto;
+    top: 0;
+    left: 0;
+    grid-template-columns: var(--page-column-layout);
+}
+
+.nav-wrap {
+    width: var(--content-width);
+    margin-left: var(--content-side-margin);
+}
+
+.nav-main ul a {
+    min-height: 3rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-main ul a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: var(--transition-fast);
+}
+
+.nav-main li:hover {
+    --icon-color: var(--pri-color);
+}

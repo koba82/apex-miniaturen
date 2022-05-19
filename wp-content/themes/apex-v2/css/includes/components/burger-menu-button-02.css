@@ -1,0 +1,68 @@
+:root {
+    --nav-mobile-height: 55px;
+}
+
+.nav-trigger {
+    display: none;
+    position: fixed;
+    background: var(--pri-color);
+    top: 0;
+    right: var(--content-side-margin);
+    z-index: 99999;
+}
+
+
+@media screen and (max-width: 950px) {
+    .nav-trigger {
+        display: block;
+    }
+}
+
+.burger {
+    position: relative;
+    cursor: pointer;
+    height: var(--nav-mobile-height);
+    width: var(--nav-mobile-height);
+}
+
+.top-bun, .hamburger, .bottom-bun {
+    position: absolute;
+    background: var(--pri-color-con);
+    height:2px;
+    left: 20%;
+    z-index: 200;
+    transition: var(--transition-medium);
+}
+
+.nav-closed .top-bun {
+    top: 30%;
+    width: 60%;
+}
+
+.nav-closed .hamburger {
+    top: calc(50% - 1px);
+    width: 50%;
+}
+
+.nav-closed .bottom-bun {
+    bottom: 30%;
+    width: 30%;
+}
+
+.nav-open .top-bun {
+    top: auto;
+    bottom: 38%;
+    width: 25%;
+    transform: rotate(45deg);
+}
+
+.nav-open .bottom-bun {
+    top: 40%;
+    width: 25%;
+    transform: rotate(-45deg);
+}
+
+.nav-open .hamburger {
+    width: 58%;
+    left: 22%;
+}

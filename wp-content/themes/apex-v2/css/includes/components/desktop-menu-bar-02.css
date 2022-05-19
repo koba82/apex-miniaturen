@@ -1,0 +1,77 @@
+/*
+*  Aligned to top left against logo, no background
+*/
+
+.nav-main{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    background: var(--pri-color);
+    --icon-color: var(--pri-color);
+}
+
+.scroll-offset .nav-main {
+    position: fixed;
+    width: 100%;
+    bottom: auto;
+    top: 0;
+    left: 0;
+    grid-template-columns: var(--page-column-layout);
+}
+
+.nav-wrap {
+    padding-left: calc( var(--logo-width) + var(--space-md) );
+    width: var(--content-width);
+    margin-left: var(--content-side-margin);
+}
+
+.nav-wrap > ul {
+    height: 100%;
+}
+
+.nav-main ul a {
+    min-height: 3rem;
+    transition: all 0.1s ease-in-out;
+    background: var(--con-color);
+    color: var(--pri-color);
+    border-bottom: 4px solid transparent;
+}
+
+.nav-main ul a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: var(--transition-fast);
+}
+
+.nav-main {
+    background: white;
+    height: var(--nav-bar-height);
+    top: var(--top-bar-height);
+    border-bottom: var(--nav-item-border);
+}
+
+ul.menu > li > a:hover {
+    border-bottom-color: var(--sec-color);
+}
+
+.sub-menu {
+    box-shadow: var(--box-shadow);
+    --colspan: 3;
+}
+
+.sub-menu a {
+    border-bottom: var(--nav-item-border);
+}
+
+.sub-menu a:hover {
+    background: rgb(240,240,240);
+}
+
+.sub-menu li:last-child a {
+    border-bottom: none;
+}

@@ -1,0 +1,977 @@
+{
+    "key": "group_565da3b638a97",
+    "title": "Configuratie",
+    "fields": [
+        {
+            "key": "field_582225ebb3b56",
+            "label": "(Bedrijfs)gegevens",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a743fbc9a48c",
+            "label": "(Bedrijfs)gegevens",
+            "name": "config-naw",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5665f350beea6",
+                    "label": "(Bedrijfs)Naam",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_565db02fd32c4",
+                    "label": "Straatnaam",
+                    "name": "street",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a74418acd42f",
+                    "label": "Huisnummer",
+                    "name": "number",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5665f56bbeea7",
+                    "label": "Postcode",
+                    "name": "zipcode",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5665f58bbeea8",
+                    "label": "Plaats",
+                    "name": "city",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_565da3d756c61",
+                    "label": "Telefoonnummer",
+                    "name": "telephone",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_565db05282f99",
+                    "label": "E-mail adres",
+                    "name": "email",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5a74499ef030b",
+            "label": "Zakelijk",
+            "name": "config-business",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5a74499ef030e",
+                    "label": "Bank naam",
+                    "name": "bank",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a74499ef030d",
+                    "label": "Bankrekening",
+                    "name": "bank-account",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a74499ef030c",
+                    "label": "Kamer van Koophandel",
+                    "name": "kvk",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5a74499ef030f",
+                    "label": "BTW Nummer",
+                    "name": "vat",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "49",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_57a9af8ac3b39",
+            "label": "Vormgeving",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5f71e9d0e2f26",
+            "label": "Logo's",
+            "name": "config-logo",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_57a9a2dcd379d",
+                    "label": "Primair logo",
+                    "name": "primary-logo",
+                    "type": "file",
+                    "instructions": "Bestandstype: PNG of SVG",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "0.5",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_584fe5afbde30",
+                    "label": "Logo in footer",
+                    "name": "secondary-logo",
+                    "type": "file",
+                    "instructions": "Bestandstype: PNG of SVG",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "0.5",
+                    "mime_types": "png, svg"
+                }
+            ]
+        },
+        {
+            "key": "field_5a741cade8522",
+            "label": "Kleuren",
+            "name": "config-colors",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5a741ccae8523",
+                    "label": "Primaire kleur",
+                    "name": "pri-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "float-left",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5a75beda49e80",
+                    "label": "Secundaire kleur",
+                    "name": "sec-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5a75bf5c49e81",
+                    "label": "Accent kleur",
+                    "name": "ter-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5a741cd2e8524",
+                    "label": "Tekst kleur",
+                    "name": "text-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "float-left",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5a760d592b7a7",
+                    "label": "Tekstkoppen kleur",
+                    "name": "h-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "float-left",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_61a8978356685",
+                    "label": "Icoon kleur",
+                    "name": "icon-color",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "34",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "enable_opacity": 0,
+                    "return_format": "string"
+                },
+                {
+                    "key": "field_5f71e8b2e244e",
+                    "label": "Additionele kleuren",
+                    "name": "additional-colors",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "Kleur toevoegen",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f71e8d2e244f",
+                            "label": "Kleur",
+                            "name": "add-color",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "enable_opacity": false,
+                            "return_format": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_5b11b35b8d422",
+            "label": "Lettertype koppen",
+            "name": "config-header-font",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Open+Sans": "<span class=\"font-selection header-selection\" style=\"font-family: 'Open Sans'; \">Open Sans<\/span>",
+                "Merriweather": "<span class=\"font-selection header-selection\" style=\"font-family: 'Merriweather'; \">Merriweather <\/span>",
+                "Roboto": "<span class=\"font-selection header-selection\" style=\"font-family: 'Roboto'; \">Roboto<\/span>",
+                "Playfair+Display": "<span class=\"font-selection header-selection\" style=\"font-family: 'Playfair Display'; \">Playfair Display<\/span>",
+                "Nunito": "<span class=\"font-selection header-selection\" style=\"font-family: 'Nunito'; \">Nunito<\/span>",
+                "Montserrat": "<span class=\"font-selection\" style=\"font-family: 'Montserrat'; \">Montserrat<\/span>",
+                "Montserrat+Alternates": "<span class=\"font-selection header-selection\" style=\"font-family: 'Montserrat Alternates'; \">Montserrat Alternates<\/span>",
+                "Spectral": "<span class=\"font-selection header-selection\" style=\"font-family: 'Spectral'; \">Spectral<\/span>",
+                "Josefin+Slab": "<span class=\"font-selection header-selection\" style=\"font-family: 'Josefin Slab'; \">Josefin Slab<\/span>",
+                "Arima+Madurai": "<span class=\"font-selection header-selection\" style=\"font-family: 'Arima Madurai'; \">Arima Madurai<\/span>",
+                "Dancing+Script": "<span class=\"font-selection header-selection\" style=\"font-family: 'Dancing Script'; \">Dancing Script<\/span>",
+                "Trirong": "<span class=\"font-selection header-selection\" style=\"font-family: 'Trirong'; \">Trirong<\/span>",
+                "Zilla+Slab": "<span class=\"font-selection header-selection\" style=\"font-family: 'Zilla Slab'; \">Zilla Slab<\/span>",
+                "Raleway": "<span class=\"font-selection header-selection\" style=\"font-family: 'Raleway'; \">Raleway<\/span>",
+                "Permanent+Marker": "<span class=\"font-selection header-selection\" style=\"font-family: 'Permanent Marker'; \">Permanent Marker<\/span>",
+                "Pacifico": "<span class=\"font-selection header-selection\" style=\"font-family: 'Pacifico'; \">Pacifico<\/span>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "array"
+        },
+        {
+            "key": "field_5b11b9d4c71f3",
+            "label": "Lettertype tekst",
+            "name": "config-text-font",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Open+Sans": "<span class=\"font-selection\" style=\"font-family: 'Open Sans'; \">Open Sans<\/span>",
+                "Merriweather": "<span class=\"font-selection\" style=\"font-family: 'Merriweather'; \">Merriweather<\/span>",
+                "Roboto": "<span class=\"font-selection\" style=\"font-family: 'Roboto'; \">Roboto<\/span>",
+                "Playfair+Display": "<span class=\"font-selection\" style=\"font-family: 'Playfair'; \">Playfair<\/span>",
+                "Nunito": "<span class=\"font-selection\" style=\"font-family: 'Nunito'; \">Nunito<\/span>",
+                "Montserrat": "<span class=\"font-selection\" style=\"font-family: 'Montserrat'; \">Montserrat<\/span>",
+                "Montserrat+Alternates": "<span class=\"font-selection\" style=\"font-family: 'Montserrat Alternates'; \">Montserrat Alternates<\/span>",
+                "Spectral": "<span class=\"font-selection\" style=\"font-family: 'Spectral'; \">Spectral<\/span>",
+                "Zilla+Slab": "<span class=\"font-selection\" style=\"font-family: 'Zilla Slab'; \">Zilla Slab<\/span>",
+                "Raleway": "<span class=\"font-selection header-selection\" style=\"font-family: 'Raleway'; \">Raleway<\/span>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "array"
+        },
+        {
+            "key": "field_5d39fc0d21935",
+            "label": "Alternatieve Fonts voor header - Google fonts CSS",
+            "name": "config-header-font-css",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d39fd1b21936",
+            "label": "Alternatieve Fonts voor body - Google fonts CSS",
+            "name": "config-text-font-css",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6197b5f9e061a",
+            "label": "Dikte koppen",
+            "name": "header-weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "100": "100 (Thin)",
+                "300": "300 (Light)",
+                "400": "400 (Normal)",
+                "700": "700 (Bold)",
+                "900": "900 (Black)"
+            },
+            "default_value": 700,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6197b66ce061b",
+            "label": "Dikte tekst",
+            "name": "text-weight",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "100": "100 (Thin)",
+                "300": "300 (Light)",
+                "400": "400 (Normal)",
+                "700": "700 (Bold)",
+                "900": "900 (Black)"
+            },
+            "default_value": 400,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_56c4909cab1aa",
+            "label": "Standaard header afbeelding",
+            "name": "header-images",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": 5,
+            "insert": "append",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": 8,
+            "mime_types": "",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_582ee5c6ef595",
+            "label": "Openingstijden",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_582ee5deef596",
+            "label": "Openingstijden",
+            "name": "config-open-hours",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Nieuwe regel",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_582ee60bef597",
+                    "label": "Periode",
+                    "name": "opening-hours-period",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_582ee629ef598",
+                    "label": "Openingstijden",
+                    "name": "open-hours-time",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_585a63f37e0ac",
+            "label": "Openingstijden tonen in footer?",
+            "name": "config-open-hours-footer",
+            "type": "true_false",
+            "instructions": "De 'footer' is het onderste deel van de pagina en is op iedere pagina hetzelfde.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f737279b02f9",
+            "label": "GDPR (Cookie verklaringen)",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5f737384a5eab",
+            "label": "Cookiemelding gebruiken",
+            "name": "use-cookiealert",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f737296b02fa",
+            "label": "Tekst cookiemelding",
+            "name": "cookiealert-text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Wij gebruiken analytische cookies om je een optimale gebruikerservaring te bieden en we gebruiken functionele cookies om jouw voorkeuren op te slaan. Door op 'Instellingen wijzigen' te klikken, kun je meer lezen over onze cookies en je voorkeuren aanpassen. Door op 'Accepteren' te klikken, ga je akkoord met het gebruik van alle cookies zoals omschreven in onze cookieverklaring.",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f7374cc20ddb",
+            "label": "Trackingcookies",
+            "name": "trackingcookies",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Tracking cookie toevoegen",
+            "sub_fields": [
+                {
+                    "key": "field_5f7374e520ddc",
+                    "label": "Naam",
+                    "name": "name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f7374f520ddd",
+                    "label": "Beschrijving voor gebruiker",
+                    "name": "description",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f73750f20dde",
+                    "label": "Partij",
+                    "name": "party",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f73751c20ddf",
+                    "label": "Script",
+                    "name": "script",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "<script.... <\/script>",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5f7375bdf4c87",
+                    "label": "Cookienaam",
+                    "name": "tracking-name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "modified": 1640270519
+}

@@ -1,0 +1,114 @@
+/*
+Theme Name: Envisic Apex One v1
+Theme URI: http://www.envisic.nl
+Author: Envisic
+Author URI: http://www.envisic.nl/
+*/
+
+/*@import url("../includes/components/burger-menu-button-02.css");*/
+/*@import url("../includes/components/desktop-burger-menu-02.css");*/
+
+@import url("../includes/components/desktop-menu-bar-02.css");
+
+:root {
+    --logo-width: 110px;
+    --header-height: 700px;
+    --nav-item-border: 1px solid rgb(220,220,220);
+    --nav-bar-height: 80px;
+    --top-bar-height: 40px;
+    --usp-bar-height: 60px;
+    --header-images-height: calc(var(--header-height) - var(--nav-bar-height) - var(--top-bar-height) - var(--usp-bar-height));
+}
+
+.scroll-offset header {
+    --nav-bar-height: 60px;
+    --logo-width: 70px;
+}
+
+.logo-wrap {
+    position: fixed;
+    margin-top: 5px;
+    transition: var(--transition-fast);
+}
+
+.header-images,
+.block-h1  {
+    height: var(--header-images-height);
+    margin-top: calc(var(--header-height) - var(--header-images-height));
+    pointer-events: none;
+}
+
+.header-images:before,
+.header-images:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    z-index: 12;
+}
+
+.header-images:before {
+    left: 0;
+    background: linear-gradient(100deg, rgb(var(--pri-rgb), 0.8) 10%, rgb(var(--pri-rgb), 0) 75% );
+}
+
+.header-images:after {
+    right: 0;
+    background: linear-gradient(-80deg, rgb(var(--pri-rgb), 0.8) 0%, rgb(var(--pri-rgb), 0) 65% );
+}
+
+
+.block-h1 {
+    position: absolute;
+    left: var(--content-side-margin);
+}
+
+.block-h1 .content {
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+}
+
+.nav-top-bar {
+    background: var(--pri-color);
+    z-index: 50;
+}
+
+.nav-top a {
+    height: var(--top-bar-height);
+    padding: .8rem;
+    display: flex;
+    gap: .4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-top .icon-wrap {
+    --icon-color: var(--con-color);
+}
+
+.row:first-child .flex-button {
+    grid-row: 1 / 1;
+}
+
+@media screen and (max-width: 950px) {
+    :root {
+        --logo-width: 110px;
+        --header-height: 300px;
+        --nav-bar-height: 0px;
+        --top-bar-height: 0px;
+        --usp-bar-height: 0px;
+    }
+
+    .open-hour-period {
+        flex: 1 1 45%;
+    }
+
+    .open-hour-time {
+        flex: 1 1 55%;
+    }
+}

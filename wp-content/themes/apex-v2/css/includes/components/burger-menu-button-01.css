@@ -1,0 +1,54 @@
+:root {
+    --nav-mobile-height: 55px;
+}
+
+.nav-trigger {
+    display: none;
+    position: fixed;
+    background: var(--pri-color);
+    top: 0;
+    right: var(--content-side-margin);
+    z-index: 99999;
+}
+
+
+@media screen and (max-width: 950px) {
+    .nav-trigger {
+        display: block;
+    }
+}
+
+.burger {
+    position: relative;
+    cursor: pointer;
+    height: var(--nav-mobile-height);
+    width: var(--nav-mobile-height);
+}
+
+.top-bun, .bottom-bun {
+    position: absolute;
+    background: var(--pri-color-con);
+    width: 60%;
+    height: 1px;
+    left: 20%;
+    z-index: 200;
+    transition: var(--transition-medium);
+}
+
+.nav-closed .top-bun {
+    top:35%;
+}
+
+.nav-closed .bottom-bun {
+    bottom: 35%;
+}
+
+.nav-open .top-bun {
+    top:50%;
+    transform: rotate(225deg);
+}
+
+.nav-open .bottom-bun {
+    top:50%;
+    transform: rotate(-225deg);
+}

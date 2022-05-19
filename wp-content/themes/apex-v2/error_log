@@ -1,0 +1,4 @@
+[31-Jan-2019 14:24:33 Europe/Amsterdam] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/envisi1q/clients/hullencatering.nl/public/wp-content/themes/apex-0.8/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/envisi1q/clients/hullencatering.nl/public/wp-content/themes/apex-0.8/index.php on line 6

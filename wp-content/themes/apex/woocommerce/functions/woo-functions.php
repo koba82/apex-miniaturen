@@ -684,12 +684,12 @@ add_action('woocommerce_no_products_found', 'lister_page_open_div', 5);
 
 function show_filter_on_listerpage()
 {
-
+    echo '<h1>some shit</h1>';
     get_sidebar('shop');
 
 }
-
-add_action('woocommerce_after_shop_loop', 'show_filter_on_listerpage');
+add_action('woocommerce_after_main_content', 'show_filter_on_listerpage', 4);
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar');
 
 /**
  * Hide H1 titles on listerpage
