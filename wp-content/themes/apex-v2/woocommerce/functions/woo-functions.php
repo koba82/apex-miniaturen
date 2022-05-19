@@ -1373,7 +1373,7 @@ function the_size_chart() {
 
     if(array_key_exists($scale, $sizechart) && array_key_exists($category, $sizechart[$scale]) ) :
 
-        $output = '<div class="product-size-chart"><h4>Afmetingen</h4><table class="content-table"><tr><th>Lengte</th><th>Breedte</th><th>Hoogte</th></tr><tr>';
+        $output = '<div class="product-size-chart flex-table-wrap"><h4>Afmetingen</h4><table class="content-table"><tr><th>Lengte</th><th>Breedte</th><th>Hoogte</th></tr><tr>';
         $output.= $sizechart[$scale][$category];
         $output.= '</tr></table><i>Afmetingen zijn bij benadering.</i></div>';
 
