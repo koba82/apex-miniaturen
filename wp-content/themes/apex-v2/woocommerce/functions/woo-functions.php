@@ -1382,3 +1382,45 @@ function the_size_chart() {
     return $output;
 
 }
+
+
+function apex_display_product_attributes($product)
+{
+    $product_attributes = array();
+    // Add product attributes to list.
+    $attributes = array_filter($product->get_attributes(), 'wc_attributes_array_filter_visible');
+    foreach ($attributes as $attribute) {
+        $values = array();
+        if ($attribute->is_taxonomy()) {
+            $attribute_taxonomy = $attribute->get_taxonomy_object();
+            $attribute_values = wc_get_product_terms($product->get_id(), $attribute->get_name(), array('fields' => 'all'));
+
+            foreach ($attribute_values as $attribute_value) {
+                $value_name = esc_html($attribute_value->name);
+
+                if ($attribute_taxonomy->attribute_public) {
+                    $values[] = '<a href="' . esc_url(get_term_link($attribute_value->term_id, $attribute->get_name())) . '" rel="tag">' . $value_name . '</a>';
+                }
+            }
+        }
+        $product_attributes['attribute_' . sanitize_title_with_dashes($attribute->get_name())] = array(
+            'label' => wc_attribute_label($attribute->get_name()),
+            'value' => apply_filters('woocommerce_attribute', wpautop(wptexturize(implode(', ', $values))), $attribute, $values),
+        );
+    }
+
+    $product_attributes = apply_filters( 'woocommerce_display_product_attributes', $product_attributes, $product );
+
+    wc_get_template(
+        'single-product/product-attributes.php',
+        array(
+            'product_attributes' => $product_attributes,
+            // Legacy params.
+            'product'            => $product,
+            'attributes'         => $attributes,
+        )
+    );
+}
+
+remove_action( 'woocommerce_product_additional_information', 'wc_display_product_attributes' );
+add_action( 'woocommerce_product_additional_information', 'apex_display_product_attributes', 10 );

@@ -60,5 +60,4 @@ if ( ! empty( $product_tabs ) ) : ?>
 
         <?php do_action( 'woocommerce_product_after_tabs' ); ?>
 
-
 <?php endif; ?>
