@@ -33,7 +33,7 @@ if ( ! defined( 'ABSPATH' ) ) {
             $bevStock = get_post_meta( get_the_ID(), '_stock_bev', true );
             $dccStock = get_post_meta( get_the_ID(), '_stock_dcc', true );
 
-            if(strpos($gdjStock, 'Yes') !== false ) :
+            if($gdjStock !== '' && strpos($gdjStock, 'No') == false ) :
                 echo '<p><span class="icon-wrap small">' . display_icon('fnd-success-alt') . '</span>Op voorraad</p>';
                 echo '<p><span class="icon-wrap small">' . display_icon('truck-delivery') . '</span>Levertijd ca. 5 werkdagen</p>';
             elseif($bevStock !== '' && $bevStock !== NULL && $bevStock !== false ) :

@@ -31,8 +31,6 @@ ob_start();
 ?>
     <table class="shop_attributes">
 
-        <?php if ( $product->enable_dimensions_display() ) : ?>
-
             <?php if ( $product->has_weight() ) : $has_row = true; ?>
                 <tr class="<?php if ( ( $alt = $alt * -1 ) === 1 ) echo 'alt'; ?>">
                     <th><?php _e( 'Weight', 'woocommerce' ) ?></th>
@@ -46,8 +44,6 @@ ob_start();
                     <td class="product_dimensions"><?php echo $product->get_dimensions(); ?></td>
                 </tr>
             <?php endif; ?>
-
-        <?php endif; ?>
 
         <?php
 

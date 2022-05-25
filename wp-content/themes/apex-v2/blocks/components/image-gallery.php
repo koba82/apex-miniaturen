@@ -19,7 +19,7 @@ $display_caption = $component['caption'];
                             "imageThumb" : "<?=$images[0]['sizes']['image-400']; ?>",
                             "imagePosition" : "0",
                             "fancybox" : "<?=$id; ?>"}'
-               data-fancybox="<?=$id; ?>" class="content-image" <?=($image[0]['alt']) ? 'title="' . $image[0]['alt'] . '"' : '';?>>
+               data-fancybox-start="<?=$id; ?>" class="content-image fancy-box-main-image" <?=($image[0]['alt']) ? 'title="' . $image[0]['alt'] . '"' : '';?>>
                 <img src="<?=$images[0]['sizes']['image-800']; ?>"/>
                 <div class="content-image-overlay">
                     <div class="icon-wrap medium">
@@ -39,7 +39,7 @@ $display_caption = $component['caption'];
                 <div class="content-image" data-href="<?=$image['sizes']['main-image-size']; ?>">
 
                     <?php if($counter !== 1) : ?>
-                        <a href="<?=$image['sizes']['main-image-size']; ?>" data-fancybox="<?=$id; ?>"></a>
+                        <a href="<?=$image['sizes']['main-image-size']; ?>" data-fancybox-start="<?=$id; ?>"></a>
                     <?php endif; ?>
 
                     <img src="<?=$image['sizes']['image-400']; ?>"
@@ -65,6 +65,30 @@ $display_caption = $component['caption'];
     <script>
         window.addEventListener('load', function () {
 
+           <?php
+            $fancyBoxObject = '';
+            foreach($images as $image) :
+                $fancyBoxObject.= "{ src : '" . $image['sizes']['main-image-size'] . "', opts : { caption : 'First caption'}},\n";
+            endforeach
+            ?>
+
+            let fancyBoxData = [<?=$fancyBoxObject?>]
+            let thisFancyBoxInstance
+            let fancyBoxOffset = false
+
+            function initFancyBox(e) {
+                    e.preventDefault();
+                    thisFancyBoxInstance = $.fancybox.open(fancyBoxData,
+                        {
+                            loop : false,
+                        }
+                    );
+                    console.log(fancyBoxOffset);
+                    if(fancyBoxOffset && fancyBoxOffset !== "0") {
+                        thisFancyBoxInstance.jumpTo(fancyBoxOffset, 0);
+                    }
+            }
+
             function setLargeImage(imageData) {
                 let mainImage = document.querySelector('.image-gallery .main-image')
                 mainImage.setAttribute('data-image', JSON.stringify(imageData));
@@ -77,8 +101,13 @@ $display_caption = $component['caption'];
                 imageReel[i].addEventListener("click", function () {
                     let imgData = JSON.parse(this.querySelector('img').getAttribute('data-image'));
                     setLargeImage(imgData);
+                    fancyBoxOffset = imgData['imagePosition'];
                 });
             }
+
+            document.querySelector('[data-fancybox-start="<?=$id?>"]').addEventListener('click', function(e) {
+                initFancyBox(e)
+            });
 
             let variationsFrom = document.querySelector('.variations_form');
             if (variationsFrom) {
@@ -122,6 +151,8 @@ $display_caption = $component['caption'];
                     });
                 });
             };
+
+
 
 
             let elem<?=$id; ?> = document.querySelector('.flex-slider-<?=$slider_id; ?>');

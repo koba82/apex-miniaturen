@@ -134,137 +134,6 @@ if(!function_exists('custom_after_woocmmerce_after_cart_tag')) :
 endif;
 
 
-/**
- * Add the Custom fields for Products in WooCommerce backend (COP)
- */
-function woocommerce_render_meta_field()
-{
-    $savePrice = array(
-        'id' => '_price_save',
-        'label' => 'Bespaar',
-        'value' => get_post_meta(get_the_ID(), '_price_save', true)
-    );
-
-    $original_sku = array(
-        'id' => '_original_sku',
-        'label' => 'Oorspronkelijke SKU',
-        'value' => get_post_meta(get_the_ID(), '_original_sku', true)
-    );
-
-    $inputGDJ = array(
-        'id' => '_cop_gdj',
-        'label' => 'Inkoopprijs Geerligs & De Jong',
-        'value' => get_post_meta(get_the_ID(), '_cop_gdj', true)
-    );
-
-    $inputMCW = array(
-        'id' => '_cop_mcw',
-        'label' => 'Inkoopprijs Model Car Wholesale',
-        'value' => get_post_meta(get_the_ID(), '_cop_mcw', true)
-    );
-
-    $inputDCC = array(
-        'id' => '_cop_dcc',
-        'label' => 'Inkoopprijs The Diecast Company',
-        'value' => get_post_meta(get_the_ID(), '_cop_dcc', true)
-    );
-
-    $inputBevro = array(
-        'id' => '_cop_bev',
-        'label' => 'Inkoopprijs Bevro',
-        'value' => get_post_meta(get_the_ID(), '_cop_bev', true)
-    );
-    $inputGDJstock = array(
-        'id' => '_stock_gdj',
-        'label' => 'Voorraad Geerligs & De Jong',
-        'value' => get_post_meta(get_the_ID(), '_stock_gdj', true)
-    );
-    $inputMCWstock = array(
-        'id' => '_stock_mcw',
-        'label' => 'Voorraad Model Car Wholesale',
-        'value' => get_post_meta(get_the_ID(), '_stock_mcw', true)
-    );
-    $inputBevroStock = array(
-        'id' => '_stock_bev',
-        'label' => 'Voorraad Bevro',
-        'value' => get_post_meta(get_the_ID(), '_stock_bev', true)
-    );
-    $inputDCCstock = array(
-        'id' => '_stock_dcc',
-        'label' => 'Voorraad Diecast Company',
-        'value' => get_post_meta(get_the_ID(), '_stock_dcc', true)
-    );
-    $inputGDJ_URL = array(
-        'id' => '_url_gdj',
-        'label' => 'URL Geerligs & De Jong',
-        'value' => get_post_meta(get_the_ID(), '_url_gdj', true)
-    );
-    $inputMCW_URL = array(
-        'id' => '_url_mcw',
-        'label' => 'URL Model Car Wholesale',
-        'value' => get_post_meta(get_the_ID(), '_url_mcw', true)
-    );
-    $inputBevro_URL = array(
-        'id' => '_url_bev',
-        'label' => 'URL Bevro',
-        'value' => get_post_meta(get_the_ID(), '_url_bev', true)
-    );
-    $inputDCC_URL = array(
-        'id' => '_url_dcc',
-        'label' => 'URL Diecast Company',
-        'value' => get_post_meta(get_the_ID(), '_url_dcc', true)
-    );
-
-    ?>
-
-    <div id="save_price" class="options_group">
-        <?php woocommerce_wp_text_input($savePrice); ?>
-    </div>
-    <div id="original_sku" class="options_group">
-        <?php woocommerce_wp_text_input($original_sku); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,225,255)" class="options_group">
-        <?php woocommerce_wp_text_input($inputGDJ); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,225,255)" class="options_group">
-        <?php woocommerce_wp_text_input($inputGDJstock); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,225,255)" class="options_group">
-        <?php woocommerce_wp_text_input($inputGDJ_URL); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(255,225,225)" class="options_group">
-        <?php woocommerce_wp_text_input($inputMCW); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(255,225,225)" class="options_group">
-        <?php woocommerce_wp_text_input($inputMCWstock); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(255,225,225)" class="options_group">
-        <?php woocommerce_wp_text_input($inputMCW_URL); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,255,255)" class="options_group">
-        <?php woocommerce_wp_text_input($inputBevro); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,255,255)" class="options_group">
-        <?php woocommerce_wp_text_input($inputBevroStock); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,255,255)" class="options_group">
-        <?php woocommerce_wp_text_input($inputBevro_URL); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
-        <?php woocommerce_wp_text_input($inputDCC); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
-        <?php woocommerce_wp_text_input($inputDCCstock); ?>
-    </div>
-    <div id="cop_attr" style="background: rgb(225,255,225)" class="options_group">
-        <?php woocommerce_wp_text_input($inputDCC_URL); ?>
-    </div>
-
-    <?php
-}
-
-add_action('woocommerce_product_options_general_product_data', 'woocommerce_render_meta_field');
-
 
 
 /**
@@ -1349,7 +1218,7 @@ add_action('woocommerce_checkout_order_review', 'yourOrderHeadingCheckout', 1);
 
 /*****************************
  * Size chart
- */
+ *****************************/
 
 function the_size_chart() {
 
@@ -1424,3 +1293,223 @@ function apex_display_product_attributes($product)
 
 remove_action( 'woocommerce_product_additional_information', 'wc_display_product_attributes' );
 add_action( 'woocommerce_product_additional_information', 'apex_display_product_attributes', 10 );
+
+
+/*************************************************************************
+* Add tab to product data panel in backend
+*************************************************************************/
+
+
+function add_suppliers_data_tab( $product_data_tabs ) {
+    $product_data_tabs['Suppliers'] = array(
+        'label' => __( 'Suppliers', 'my_text_domain' ),
+        'target' => 'add_suppliers_data',
+    );
+    return $product_data_tabs;
+}
+add_filter( 'woocommerce_product_data_tabs', 'add_suppliers_data_tab' , 99 , 1 );
+
+
+
+/*************************************************************************
+ * Add the Custom fields for save price and original SKU in WooCommerce backend (COP)
+ ************************************************************************/
+function woocommerce_render_meta_field()
+{
+    $fields = array(
+        'save_price' => array(
+            'id' => '_price_save',
+            'label' => 'Bespaar',
+            'value' => get_post_meta(get_the_ID(), '_price_save', true)
+        ),
+        'original_sku' => array(
+            'id' => '_original_sku',
+            'label' => 'Oorspronkelijke SKU',
+            'value' => get_post_meta(get_the_ID(), '_original_sku', true)
+        ),
+        'original_name' => array(
+            'id' => '_original_name',
+            'label' => 'Oorspronkelijke naam',
+            'value' => get_post_meta(get_the_ID(), '_original_name', true)
+        ),
+        'original_cat' => array(
+            'id' => '_original_cat',
+            'label' => 'Oorspronkelijke categorie',
+            'value' => get_post_meta(get_the_ID(), '_original_cat', true)
+        ),
+        'timestamp' => array(
+            'id' => '_timestamp',
+            'label' => 'Timestamp',
+            'value' => get_post_meta(get_the_ID(), '_timestamp', true)
+        )
+    );
+    ?>
+
+    <div id="save_price" class="options_group">
+        <?php woocommerce_wp_text_input($fields['save_price']); ?>
+    </div>
+    <div id="original_data" class="options_group">
+        <?php woocommerce_wp_text_input($fields['original_sku']); ?>
+        <?php woocommerce_wp_text_input($fields['original_name']); ?>
+        <?php woocommerce_wp_text_input($fields['original_cat']); ?>
+    </div>
+    <div id="timestamp" class="options_group">
+        <?php woocommerce_wp_text_input($fields['timestamp']); ?>
+        <?php echo '<p style="padding-left:164px">' . date('d F y H:m:s', (int) get_post_meta(get_the_ID(), '_timestamp', true)) . '</p>'; ?>
+    </div>
+    <?php
+}
+add_action('woocommerce_product_options_general_product_data', 'woocommerce_render_meta_field');
+
+
+function add_my_custom_product_data_fields() {
+    global $woocommerce, $post;
+
+    $fields = array(
+        'savePrice' => array(
+            'id' => '_price_save',
+            'label' => 'Bespaar',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_price_save', true)
+        ),
+        'original_sku' => array(
+            'id' => '_original_sku',
+            'label' => 'Oorspronkelijke SKU',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_original_sku', true)
+        ),
+        'cop_gdj' => array(
+            'id' => '_cop_gdj',
+            'label' => 'Inkoopprijs',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_cop_gdj', true)
+        ),
+        'cop_mcw' => array(
+            'id' => '_cop_mcw',
+            'label' => 'Inkoopprijs',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_cop_mcw', true)
+        ),
+        'cop_dcc' => array(
+            'id' => '_cop_dcc',
+            'label' => 'Inkoopprijs',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_cop_dcc', true)
+        ),
+        'cop_bev' => array(
+            'id' => '_cop_bev',
+            'label' => 'Inkoopprijs',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_cop_bev', true)
+        ),
+        'stock_gdj' => array(
+            'id' => '_stock_gdj',
+            'label' => 'Voorraad',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_stock_gdj', true)
+        ),
+        'stock_mcw' => array(
+            'id' => '_stock_mcw',
+            'label' => 'Voorraad',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_stock_mcw', true)
+        ),
+        'stock_bev' => array(
+            'id' => '_stock_bev',
+            'label' => 'Voorraad',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_stock_bev', true)
+        ),
+        'stock_dcc' => array(
+            'id' => '_stock_dcc',
+            'label' => 'Voorraad',
+            'wrapper_class' => 'flex-50',
+            'value' => get_post_meta(get_the_ID(), '_stock_dcc', true)
+        ),
+        'url_gdj' => array(
+            'id' => '_url_gdj',
+            'label' => 'URL',
+            'value' => get_post_meta(get_the_ID(), '_url_gdj', true)
+        ),
+        'url_mcw' => array(
+            'id' => '_url_mcw',
+            'label' => 'URL',
+            'value' => get_post_meta(get_the_ID(), '_url_mcw', true)
+        ),
+        'url_bev' => array(
+            'id' => '_url_bev',
+            'label' => 'URL',
+            'value' => get_post_meta(get_the_ID(), '_url_bev', true)
+        ),
+        'url_dcc' => array(
+            'id' => '_url_dcc',
+            'label' => 'URL',
+            'value' => get_post_meta(get_the_ID(), '_url_dcc', true)
+        )
+    );
+
+    ?>
+    <!-- id below must match target registered in above add_my_custom_product_data_tab function -->
+    <div id="add_suppliers_data" class="panel woocommerce_options_panel">
+        <?php
+//        woocommerce_wp_text_input( array(
+//            'id'            => '_url_gdj',
+//            'wrapper_class' => 'show_if_simple',
+//            'label'         => __( 'My Custom Field Label', 'my_text_domain' ),
+//            'description'   => __( 'My Custom Field Description', 'my_text_domain' ),
+//            'default'       => '0',
+//            'desc_tip'      => false,
+//        ) );
+
+
+        echo '
+        <style>
+        .backend-block{padding:1em; border-bottom: 1px solid #ccc;}
+        .backend-block:last-of-type{padding:1em; border-bottom: none;}
+        .backend-block > h3{padding-left:12px;}
+        .gdj.backend-block{border-left: 15px solid #c53030}
+        .dcc.backend-block{border-left: 15px solid #FFF98C}
+        .bev.backend-block{border-left: 15px solid #ec7037}
+        .mcw.backend-block{border-left: 15px solid #333333}
+        </style>
+        <div class="gdj backend-block"><h3>Geerligs & De Jong</h3>';
+        woocommerce_wp_text_input( $fields['cop_gdj'] );
+        woocommerce_wp_text_input( $fields['stock_gdj'] );
+        woocommerce_wp_text_input( $fields['url_gdj'] );
+        echo '<p><a href="' . get_post_meta(get_the_ID(), '_url_gdj', true) . '" target="_blank">Link</a>';
+        echo '</div><div class="dcc backend-block"><h3>Diecast Company</h3>';
+        woocommerce_wp_text_input( $fields['cop_dcc'] );
+        woocommerce_wp_text_input( $fields['stock_dcc'] );
+        woocommerce_wp_text_input( $fields['url_dcc'] );
+        echo '<p><a href="' . get_post_meta(get_the_ID(), '_url_dcc', true) . '" target="_blank">Link</a>';
+        echo '</div><div class="bev backend-block"><h3>Bevro</h3>';
+        woocommerce_wp_text_input( $fields['cop_bev'] );
+        woocommerce_wp_text_input( $fields['stock_bev'] );
+        woocommerce_wp_text_input( $fields['url_bev'] );
+        echo '<p><a href="' . get_post_meta(get_the_ID(), '_url_bev', true) . '" target="_blank">Link</a>';
+        echo '</div><div class="mcw backend-block"><h3>ModelCars Wholesale</h3>';
+        woocommerce_wp_text_input( $fields['cop_mcw'] );
+        woocommerce_wp_text_input( $fields['stock_mcw'] );
+        woocommerce_wp_text_input( $fields['url_mcw'] );
+        echo '<p><a href="' . get_post_meta(get_the_ID(), '_url_mcw', true) . '" target="_blank">Link</a>';
+        echo '</div>';
+
+        ?>
+    </div>
+    <?php
+}
+add_action( 'woocommerce_product_data_panels', 'add_my_custom_product_data_fields' );
+
+function woocommerce_process_product_meta_fields_save( $post_id ){
+    // This is the case to save custom field data of checkbox. You have to do it as per your custom fields
+    $fields = array(
+            '_cop_gdj', '_stock_gdj', '_url_gdj', '_cop_dcc', '_stock_dcc', '_url_dcc',
+            '_cop_bev', '_stock_bev', '_url_bev', '_cop_mcw', '_stock_mcw', '_url_mcw',
+            '_original_sku', '_price_save', '_original_name', '_original_cat', '_timestamp');
+
+    foreach($fields as $field) :
+        update_post_meta( $post_id, $field, $_POST[$field] );
+    endforeach;
+}
+
+add_action( 'woocommerce_process_product_meta', 'woocommerce_process_product_meta_fields_save' );
