@@ -379,8 +379,12 @@ button.single_add_to_cart_button {
     border-color: #2b324e;
 }
 
-header.woocommerce-products-header {
-    display: none;
+/*header.woocommerce-products-header {*/
+/*    display: none;*/
+/*}*/
+
+.block.lister-page {
+    margin-top: 0;
 }
 
 .products .product a {
