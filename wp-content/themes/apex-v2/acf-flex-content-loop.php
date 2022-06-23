@@ -32,7 +32,7 @@
 
                 $current_col = $cols_per_row[$row['flex-options']['column']];
                 $extend_background_color = $row['flex-options']['bgc-extend'];
-                $break_row = in_array('break-row', $row['flex-options']['margins'], true) || false;
+                $break_row = in_array('break-row', $row['flex-options']['margins'], true);
 
                 $col_width_array[] = $current_col;
                 $col_start = $col_counter;

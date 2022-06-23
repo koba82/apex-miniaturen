@@ -27,6 +27,7 @@
     .nav-mobile {
         display: flex;
         flex-direction: column;
+        overflow-y: auto;
         background: var(--pri-color);
         z-index: 999;
         position: fixed;
@@ -35,8 +36,8 @@
         top: 0;
         left: 0;
         right: 0;
-        padding-left: var(--space-3xl);
-        padding-right: var(--space-3xl);
+        padding-left: var(--stickout);
+        padding-right: var(--stickout);
         --translateX: -101vw;
         transform: var(--translate3d);
         transition: var(--transition-fast);
@@ -58,8 +59,6 @@
         opacity: 0;
         overflow: hidden;
         transition: var(--transition-medium);
-        padding-left: var(--space-md);
-        border-left: 1px solid var(--con-color);
         z-index: 3;
         margin-left: 2vw;
     }
@@ -74,8 +73,6 @@
         position: relative;
         color: var(--con-color);
         text-decoration: none;
-        font-size: 1.5rem;
-        line-height: 1.6em;
         background: var(--pri-color);
         z-index: 2;
         display: flex;
@@ -86,9 +83,13 @@
 
     .menu > li > a {
         font-family: var(--header-font);
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         line-height: 1.2em;
         padding: var(--space-xl) var(--space-sm);
+    }
+
+    .menu > li > a > .icon-wrap {
+        display: none;
     }
 
     .nav-mobile .menu-item-has-children.hover > a:before,
@@ -108,17 +109,23 @@
         z-index: 5;
         width: 15px;
         height: 15px;
-        top: calc(50% - 10px);
-        transform: rotate(135deg);
+        transform: rotate(135deg) translateY(-1px) translateX(-6px);
     }
+
 
     .nav-mobile .menu-item-has-children.hover > a:after {
         border-color: transparent transparent var(--con-color) var(--con-color);
+        transform: rotate(135deg) translateY(-6px) translateX(1px);
     }
 
     .nav-mobile .sub-menu a {
-        border: none;
-        padding: var(--space-xs);
+        padding: var(--space-md);
+        border: 1px solid var(--pri-color-light-30);
+        border-bottom: none;
+    }
+
+    .nav-mobile .sub-menu li:last-of-type a {
+        border-bottom: 1px solid var(--pri-color-light-30);
     }
 
     .nav-mobile .sub-menu a:hover {
@@ -182,8 +189,8 @@
         font-weight: normal;
     }
 
-    .nav-mobile a:hover {
-        color: rgb(var(--pri-complementary-color-rgb));
+    .nav-mobile li a {
+        padding-left:0;
     }
 
     .nav-icon {
@@ -197,10 +204,6 @@
         width: 100%;
         margin-left: 0;
         left: 0;
-    }
-
-    .nav-mobile .sub-menu {
-        left: 50vw;
     }
 
     .nav-mobile .nav-icon {

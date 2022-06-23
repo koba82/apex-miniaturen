@@ -1309,7 +1309,57 @@ function add_suppliers_data_tab( $product_data_tabs ) {
 }
 add_filter( 'woocommerce_product_data_tabs', 'add_suppliers_data_tab' , 99 , 1 );
 
+//**********************************************************************************************************************
+//	Lister Page CPT
+//**********************************************************************************************************************
 
+$lister_page_content_cpt = array(
+    'labels' => array('name' => __( 'Lister page inhoud' ),
+        'singular_name' => __( 'Lister page inhoud' ),
+        'add_new' => __( 'Lister page inhoud toevoegen' ),
+        'add_new_item' => __( 'Lister page inhoud toevoegen' ),
+        'edit_item' => __( 'Lister page inhoud bewerken' ),
+        'new_item' => __( 'Lister page inhoud toevoegen' ),
+    ),
+    'public' => true,
+    'has_archive' => false,
+    'show_in_nav_menus' => false,
+    'supports' => array('title', 'editor'),
+    'menu_icon' => __('dashicons-format-aside'),
+    'rewrite' => array('slug' => __( 'lister-page-content'))
+);
+
+register_post_type('lister-page-content', $lister_page_content_cpt);
+
+
+//**********************************************************************************************************************
+//	Find Lister Page content
+//**********************************************************************************************************************
+
+function lister_page_content($taxonomy_name) {
+
+    global $post;
+    $found = null;
+    $posts = get_posts( array( 'post_type' => 'lister-page-content'));
+    if( $posts ):
+        foreach( $posts as $post ) :
+
+            if( have_rows('attributes', $post->ID) ):
+                while ( have_rows('attributes',$post->ID ) ) : the_row();
+                    $attr = get_sub_field('driver');
+                    $name = (string) $attr->name;
+                    if($name === $taxonomy_name) :
+                        $found = $post->ID;
+                    endif;
+                endwhile;
+            endif;
+        endforeach;
+        wp_reset_postdata();
+    endif;
+
+    return $found;
+
+}
 
 /*************************************************************************
  * Add the Custom fields for save price and original SKU in WooCommerce backend (COP)

@@ -1982,13 +1982,13 @@ $icons = array(
     <polyline points="7 17 12 12 17 17" />
 </svg>',
 
-    'circle-check' => '<svg xmlns="http://www.w3.org/2000/svg"  cle-check" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle-check' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circle-check" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="12" cy="12" r="9" />
     <path d="M9 12l2 2l4 -4" />
 </svg>',
 
-    'circle-dashed' => '<svg xmlns="http://www.w3.org/2000/svg"  cle-dashed" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle-dashed' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circle-dashed" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" />
     <path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" />
@@ -2000,7 +2000,7 @@ $icons = array(
     <path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" />
 </svg>',
 
-    'circle-dotted' => '<svg xmlns="http://www.w3.org/2000/svg"  cle-dotted" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle-dotted' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circcle-dotted" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <line x1="7.5" y1="4.21" x2="7.5" y2="4.22" />
     <line x1="4.21" y1="7.5" x2="4.21" y2="7.51" />
@@ -2016,44 +2016,44 @@ $icons = array(
     <line x1="12" y1="3" x2="12" y2="3.01" />
 </svg>',
 
-    'circle-minus' => '<svg xmlns="http://www.w3.org/2000/svg"  cle-minus" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle-minus' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circle-minus" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="12" cy="12" r="9" />
     <line x1="9" y1="12" x2="15" y2="12" />
 </svg>',
 
-    'circle-plus' => '<svg xmlns="http://www.w3.org/2000/svg"  cle-plus" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle-plus' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circle-plus" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="12" cy="12" r="9" />
     <line x1="9" y1="12" x2="15" y2="12" />
     <line x1="12" y1="9" x2="12" y2="15" />
 </svg>',
 
-    'circle-square' => '<svg xmlns="http://www.w3.org/2000/svg"  cle-square" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle-square' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circle-square" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="9.5" cy="9.5" r="6.5" />
     <rect x="10" y="10" width="11" height="11" rx="2" />
 </svg>',
 
-    'circle-x' => '<svg xmlns="http://www.w3.org/2000/svg"  cle-x" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle-x' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circle-x" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="12" cy="12" r="9" />
     <path d="M10 10l4 4m0 -4l-4 4" />
 </svg>',
 
-    'circle' => '<svg xmlns="http://www.w3.org/2000/svg"  cle" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circle' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circle" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="12" cy="12" r="9" />
 </svg>',
 
-    'circles' => '<svg xmlns="http://www.w3.org/2000/svg"  cles" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'circles' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-circles" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="12" cy="7" r="4" />
     <circle cx="6.5" cy="17" r="4" />
     <circle cx="17.5" cy="17" r="4" />
 </svg>',
 
-    'clear-formatting' => '<svg xmlns="http://www.w3.org/2000/svg"  clear-formatting" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'clear-formatting' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-clear-formatting" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M17 15l4 4m0 -4l-4 4" />
     <path d="M7 6v-1h11v1" />
@@ -2061,7 +2061,7 @@ $icons = array(
     <line x1="13" y1="5" x2="9" y2="19" />
 </svg>',
 
-    'click' => '<svg xmlns="http://www.w3.org/2000/svg"  click" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'click' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-click" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <line x1="3" y1="12" x2="6" y2="12" />
     <line x1="12" y1="3" x2="12" y2="6" />
@@ -2071,14 +2071,14 @@ $icons = array(
     <path d="M12 12l9 3l-4 2l-2 4l-3 -9" />
 </svg>',
 
-    'clipboard-check' => '<svg xmlns="http://www.w3.org/2000/svg"  clipboard-check" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'clipboard-check' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-clipboard-check" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M9 5H7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2V7a2 2 0 0 0 -2 -2h-2" />
     <rect x="9" y="3" width="6" height="4" rx="2" />
     <path d="M9 14l2 2l4 -4" />
 </svg>',
 
-    'clipboard-list' => '<svg xmlns="http://www.w3.org/2000/svg"  clipboard-list" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'clipboard-list' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-clipboard-list" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
     <rect x="9" y="3" width="6" height="4" rx="2" />
@@ -2088,70 +2088,70 @@ $icons = array(
     <line x1="13" y1="16" x2="15" y2="16" />
 </svg>',
 
-    'clipboard-x' => '<svg xmlns="http://www.w3.org/2000/svg"  clipboard-x" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'clipboard-x' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-clipboard-x" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
     <rect x="9" y="3" width="6" height="4" rx="2" />
     <path d="M10 12l4 4m0 -4l-4 4" />
 </svg>',
 
-    'clipboard' => '<svg xmlns="http://www.w3.org/2000/svg"  clipboard" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'clipboard' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-clipboard" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
     <rect x="9" y="3" width="6" height="4" rx="2" />
 </svg>',
 
-    'clock' => '<svg xmlns="http://www.w3.org/2000/svg"  clock" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'clock' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-clock" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <circle cx="12" cy="12" r="9" />
     <polyline points="12 7 12 12 15 15" />
 </svg>',
 
-    'cloud-download' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud-download" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud-download' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud-download" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4" />
     <line x1="12" y1="13" x2="12" y2="22" />
     <polyline points="9 19 12 22 15 19" />
 </svg>',
 
-    'cloud-fog' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud-fog" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud-fog' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud-fog" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M7 16a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" />
     <line x1="5" y1="20" x2="19" y2="20" />
 </svg>',
 
-    'cloud-off' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud-off" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud-off' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud-off" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <line x1="3" y1="3" x2="21" y2="21" />
     <path d="M18 18h-11c-2.598 0 -4.705 -2.015 -4.705 -4.5s2.107 -4.5 4.705 -4.5c.112 -.5 .305 -.973 .568 -1.408m2.094 -1.948c.329 -.174 .68 -.319 1.05 -.43c1.9 -.576 3.997 -.194 5.5 1c1.503 1.192 2.185 3.017 1.788 4.786h1a3.5 3.5 0 0 1 2.212 6.212" />
 </svg>',
 
-    'cloud-rain' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud-rain" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud-rain' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud-rain" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7" />
     <path d="M11 13v2m0 3v2m4 -5v2m0 3v2" />
 </svg>',
 
-    'cloud-snow' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud-snow" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud-snow' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud-snow" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7" />
     <path d="M11 15v.01m0 3v.01m0 3v.01m4 -4v.01m0 3v.01" />
 </svg>',
 
-    'cloud-storm' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud-storm" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud-storm' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud-storm" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
     <polyline points="13 14 11 18 14 18 12 22" />
 </svg>',
 
-    'cloud-upload' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud-upload" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud-upload' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud-upload" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" />
     <polyline points="9 15 12 12 15 15" />
     <line x1="12" y1="12" x2="12" y2="21" />
 </svg>',
 
-    'cloud' => '<svg xmlns="http://www.w3.org/2000/svg"  cloud" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    'cloud' => '<svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-cloud" width="0px" height="0px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 
     <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-12" />
 </svg>',

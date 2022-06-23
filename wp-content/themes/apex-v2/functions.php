@@ -1225,7 +1225,10 @@ add_filter('acf/load_field/name=flex-card-bgc-select', 'acf_load_color_field_cho
 		  array(
 			'main-nav' => __( 'Hoofdnavigatie' ),
 			'top-nav' => __( 'Topnavigatie' ),
-			'footer-nav' => __( 'Footernavigatie')
+			'footer-nav-col-1' => __( 'Footernavigatie kolom 1'),
+			'footer-nav-col-2' => __( 'Footernavigatie kolom 2'),
+			'footer-nav-col-3' => __( 'Footernavigatie kolom 3'),
+			'footer-nav-col-4' => __( 'Footernavigatie kolom 4'),
 		  )
 		);
 	}

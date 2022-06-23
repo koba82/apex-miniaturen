@@ -1,50 +1,63 @@
 <footer itemscope itemtype="http://schema.org/WPFooter">
-	<div class="footer-wrapper">
+    <div class="footer-container bgc pri-color">
 
-			<div class="footer-content footer-logo">
-				<a href="<?php echo site_url(); ?>" class="logo-link">
-                    <?php
-                    $logos = get_field('config-logo', 'option');
-                    $sec_logo_url = $logos['secondary-logo'] ? $logos['secondary-logo'] : $logos['primary-logo']; ?>
-                    <img src="<?=$sec_logo_url;?>" alt="<?php the_field('config-name', 'option'); ?>" />
-				</a>
-			</div>
+        <div class="footer-wrapper">
 
-			<div class="footer-content footer-naw align-child-icons" itemscope itemtype="http://schema.org/LocalBusiness">
-				
-					<?php if(get_naw('name')) { ?><span itemprop="name"><strong><?php naw('name') ?></strong></span><br><?php }; ?>
-					<?php if(get_naw('street') && get_naw('number')) { ?><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-						<span itemprop="streetAddress" data-icon="&#xf27d;"><?php naw('street');?> <?php naw('number'); ?></span><br>
-						<span itemprop="postalCode"><?php naw('zipcode'); ?></span>
-						<span itemprop="addressLocality"><?php naw('city'); ?></span><br>
-						<?php }; ?>
-					<?php if(get_naw('telephone')) { ?><span itemprop="telephone" data-icon="&#xf293;"><a href="tel:<?php $tel = str_replace(" ","",get_naw('telephone')); $tel = str_replace("-","",$tel); echo $tel; ?>" class="telephone">
-						<?php naw('telephone'); ?></a></span><br><?php }; ?>
-					<?php if(get_naw('email')) { ?><span itemprop="email" data-icon="&#xf1c6;"><?php naw('email'); ?></span><br><?php }; ?>
-                    <img style="display:none" itemprop="logo" src="<?php echo $logos['primary-logo']; ?>" />
-                    <img style="display:none" itemprop="image" src="<?php echo $logos['primary-logo']; ?>" />
-
-				</div>
-			</div>
-
-            <div class="footer-content footer-nav">
-                <?php wp_nav_menu( array(
-                    'theme_location' => 'footer-nav',
-                    'container_class' => 'nav-wrap' ) );
-                ?>
-            </div>
-
-			<?php if(get_field('config-open-hours-footer', 'option') && have_rows('config-open-hours', 'option')): ?>
-                <div class="footer-content footer-open-hours-block">
-                <span><strong>Openingstijden</strong></span>
-                <?php while ( have_rows('config-open-hours', 'option') ) : the_row(); ?>
-                    <div class="open-hours-wrap"><span class="open-hour-period"><?php the_sub_field('opening-hours-period', 'option'); ?></span><span class="open-hour-time"><?php the_sub_field('open-hours-time', 'option'); ?></span></div>
-                <?php endwhile; ?>
+                <div class="footer-content footer-logo">
+                    <a href="<?php echo site_url(); ?>" class="logo-link">
+                        <?php
+                        $logos = get_field('config-logo', 'option');
+                        $sec_logo_url = $logos['secondary-logo'] ? $logos['secondary-logo'] : $logos['primary-logo']; ?>
+                        <img src="<?=$sec_logo_url;?>" alt="<?php the_field('config-name', 'option'); ?>" />
+                    </a>
                 </div>
-            <?php endif; ?>
 
-		<div class="envisic"><a href="http://www.envisic.nl">Een website van Envisic.</a></div>
-	</div>
+            <section class="row">
+                <div class="footer-content block no-bgc colspan-3 footer-nav-col footer-nav-col-1">
+                    <span class="footer-menu-title"><?=wp_get_nav_menu_name('footer-nav-col-1')?></span>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer-nav-col-1',
+                        'container_class' => 'nav-wrap' ) );
+                    ?>
+                </div>
+
+                <div class="footer-content block no-bgc colspan-3 footer-nav-col footer-nav-col-2">
+                    <span class="footer-menu-title"><?=wp_get_nav_menu_name('footer-nav-col-2')?></span>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer-nav-col-2',
+                        'container_class' => 'nav-wrap' ) );
+                    ?>
+                </div>
+
+                <div class="footer-content block no-bgc colspan-3 footer-nav-col footer-nav-col-3">
+                    <span class="footer-menu-title"><?=wp_get_nav_menu_name('footer-nav-col-3')?></span>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer-nav-col-3',
+                        'container_class' => 'nav-wrap' ) );
+                    ?>
+                </div>
+
+                <div class="footer-content block no-bgc colspan-3 footer-nav-col footer-nav-col-4">
+                    <span class="footer-menu-title"><?=wp_get_nav_menu_name('footer-nav-col-4')?></span>
+                    <?php wp_nav_menu( array(
+                        'theme_location' => 'footer-nav-col-4',
+                        'container_class' => 'nav-wrap' ) );
+                    ?>
+                </div>
+
+            </section>
+
+            <div class="envisic"></div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+
+        <div class="footer-wrapper bottom-footer">
+            <span>©<?php echo date('Y')?> Apex Miniaturen</span><span><a href="/algemene-voorwaarden" rel="nofollow">Algemene Voorwaarden zijn van toepassing</a></span><span><a href="/privacyverklaring" rel="nofollow">Lees onze privacyverklaring.</a></span><span>Alle prijzen zijn exclusief BTW en verzendkosten, tenzij anders aangegeven</span><span>Realisatie: <a href="http://www.envisic.nl">Envisic.</a></span>
+        </div>
+
+    </div>
 	
 </footer>
 

@@ -5873,14 +5873,14 @@
                                     },
                                     "choices": {
                                         "no-bgc": "<span class=\"color-selector\" style=\"background: #fffff\"> Geen <\/span>",
-                                        "bgc pri-color": "<span class=\"color-selector\" style=\"background: #3d3d3d;\"> <\/span>",
-                                        "bgc sec-color": "<span class=\"color-selector\" style=\"background: #e4340f;\"> <\/span>",
-                                        "bgc ter-color": "<span class=\"color-selector\" style=\"background: #3d3d3d;\"> <\/span>",
-                                        "bgc additional-color-1": "<span class=\"color-selector\" style=\"background: #238c63;\"> <\/span>",
-                                        "bgc additional-color-2": "<span class=\"color-selector\" style=\"background: #d3ad13;\"> <\/span>",
-                                        "bgc additional-color-3": "<span class=\"color-selector\" style=\"background: #e4340f;\"> <\/span>",
-                                        "bgc additional-color-4": "<span class=\"color-selector\" style=\"background: #f4f4f4;\"> <\/span>",
-                                        "bgc additional-color-5": "<span class=\"color-selector\" style=\"background: #dcdcdc;\"> <\/span>"
+                                        "bgc pri-color": "<span class=\"color-selector\" style=\"background: #3c3842;\"> <\/span>",
+                                        "bgc sec-color": "<span class=\"color-selector\" style=\"background: #18726e;\"> <\/span>",
+                                        "bgc ter-color": "<span class=\"color-selector\" style=\"background: #f2f0ea;\"> <\/span>",
+                                        "bgc additional-color-1": "<span class=\"color-selector\" style=\"background: #33871f;\"> <\/span>",
+                                        "bgc additional-color-2": "<span class=\"color-selector\" style=\"background: #aca9a0;\"> <\/span>",
+                                        "bgc additional-color-3": "<span class=\"color-selector\" style=\"background: ;\"> <\/span>",
+                                        "bgc additional-color-4": "<span class=\"color-selector\" style=\"background: #81d742;\"> <\/span>",
+                                        "bgc additional-color-5": "<span class=\"color-selector\" style=\"background: ;\"> <\/span>"
                                     },
                                     "allow_null": 0,
                                     "other_choice": 0,
@@ -9113,14 +9113,14 @@
                                                     },
                                                     "choices": {
                                                         "no-bgc": "<span class=\"color-selector\" style=\"background: #fffff\"> Geen <\/span>",
-                                                        "bgc pri-color": "<span class=\"color-selector\" style=\"background: #3d3d3d;\"> <\/span>",
-                                                        "bgc sec-color": "<span class=\"color-selector\" style=\"background: #e4340f;\"> <\/span>",
-                                                        "bgc ter-color": "<span class=\"color-selector\" style=\"background: #3d3d3d;\"> <\/span>",
-                                                        "bgc additional-color-1": "<span class=\"color-selector\" style=\"background: #238c63;\"> <\/span>",
-                                                        "bgc additional-color-2": "<span class=\"color-selector\" style=\"background: #d3ad13;\"> <\/span>",
-                                                        "bgc additional-color-3": "<span class=\"color-selector\" style=\"background: #e4340f;\"> <\/span>",
-                                                        "bgc additional-color-4": "<span class=\"color-selector\" style=\"background: #f4f4f4;\"> <\/span>",
-                                                        "bgc additional-color-5": "<span class=\"color-selector\" style=\"background: #dcdcdc;\"> <\/span>"
+                                                        "bgc pri-color": "<span class=\"color-selector\" style=\"background: #3c3842;\"> <\/span>",
+                                                        "bgc sec-color": "<span class=\"color-selector\" style=\"background: #18726e;\"> <\/span>",
+                                                        "bgc ter-color": "<span class=\"color-selector\" style=\"background: #f2f0ea;\"> <\/span>",
+                                                        "bgc additional-color-1": "<span class=\"color-selector\" style=\"background: #33871f;\"> <\/span>",
+                                                        "bgc additional-color-2": "<span class=\"color-selector\" style=\"background: #aca9a0;\"> <\/span>",
+                                                        "bgc additional-color-3": "<span class=\"color-selector\" style=\"background: ;\"> <\/span>",
+                                                        "bgc additional-color-4": "<span class=\"color-selector\" style=\"background: #81d742;\"> <\/span>",
+                                                        "bgc additional-color-5": "<span class=\"color-selector\" style=\"background: ;\"> <\/span>"
                                                     },
                                                     "allow_null": 0,
                                                     "other_choice": 0,
@@ -10829,5 +10829,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1646922471
+    "modified": 1646313160
 }

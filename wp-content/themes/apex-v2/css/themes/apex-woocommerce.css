@@ -1062,10 +1062,11 @@ ul.page-numbers {
 	height: 100%;
 	font-weight:normal;
 	color: white;
-	background: var(--success-color);
+	background: var(--pri-color);
 	border-radius: 3px;
 	border-radius: var(--bor-radius-sm);
 	text-align:center;
+	line-height: 2em;
 }
 
 .page-numbers li a:hover {
@@ -1839,41 +1840,11 @@ form.woocommerce-form.woocommerce-form-login.login {
 		background: rgba(0, 0, 0, 0.1);
 	}
 
-	.nav-mobile {
-		display: block;
-		position: fixed;
-		background: var(--bgc);
-		width: 100%;
-		max-width: 450px;
-		min-height: 100%;
-		z-index: 10;
-		padding-top: calc(var(--header-height) / 2 );
-		transform: var(--translate3d);
-		--translateX: -100%;
-		transition: var(--transition-medium);
-	}
-
-	.nav-open .nav-mobile {
-		--translateX: 0;
-		height: 100%;
-		overflow-y: scroll;
-	}
-
 	.nav-mobile li.has-no-icon {
 	}
 
 	.nav-mobile li.menu-item-object-product_cat {
 		flex: 1 1 auto;
-	}
-
-	.nav-mobile li a {
-		color: var(--con-color);
-		font-size: 1.3rem;
-		line-height: 1.7em;
-		padding-left: calc(var(--stickout) + var(--gutter-md));
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		padding-top: .3rem;
-		padding-bottom: .3rem;
 	}
 
 	.nav-icon svg {
@@ -1884,13 +1855,6 @@ form.woocommerce-form.woocommerce-form-login.login {
 		filter: brightness(99);
 		width: 4rem;
 		height: 1rem;
-	}
-
-	ul.sub-menu ul.sub-menu {
-		left: auto;
-		right:0;
-		transform: none;
-		--translateY:0;
 	}
 
 	header {

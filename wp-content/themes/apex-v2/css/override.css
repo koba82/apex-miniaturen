@@ -1,9 +1,11 @@
 * {
-    --content-width: min(1200px, calc( 100vw - var(--stickout) - var(--stickout) - 0.8rem ) );
+    --content-width: min(1450px, calc( 100vw - var(--stickout) - var(--stickout) - 0.8rem ) );
 }
 
 :root {
-    --header-height: 260px;
+    --header-height: 210px;
+    --nav-bar-height: 55px;
+    --top-bar: 40px;
     --logo-width: 150px;
     --nav-icon: 1.3em;
     --card-box-shadow: none;
@@ -25,6 +27,10 @@ h1.product_title.entry-title {
 }
 
 .block-h1 {
+    margin-bottom: 0;
+}
+
+div.remove-bottom-margin h1, div.remove-bottom-margin h2, div.remove-bottom-margin h3, div.remove-bottom-margin h4, div.remove-bottom-margin h5, div.remove-bottom-margin h6 {
     margin-bottom: 0;
 }
 
@@ -111,7 +117,6 @@ h1.product_title.entry-title {
 .nav-main > .nav-wrap > ul > li:last-of-type > a {
     border-right: 1px solid rgba(255,255,255,0.2);
 }
-
 
 li.menu-item-has-children {
     position: relative;
@@ -215,6 +220,10 @@ main {
     padding-top: var(--gutter-sm)
 }
 
+.card-container {
+    height: 100%;
+}
+
 .card {
     border: var(--card-border);
 }
@@ -222,7 +231,6 @@ main {
 .card.no-bgc {
     background: white;
 }
-
 
 .card.no-bgc h2 {
     color: var(--sec-color);
@@ -588,22 +596,62 @@ button.single_add_to_cart_button:hover {
     width: var(--width);
 }
 
+footer {
+    width: 100vw;
+    padding: 0;
+    background: none;
+    color: var(--text-color);
+}
+
+.footer-container {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+}
+
 .footer-content {
     margin: 0;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem;
+    line-height: 1em;
+    padding-bottom: var(--content-margin);
+}
+
+.bottom-footer a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.bottom-footer a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.footer-nav-col {
+    flex-direction: column;
+    padding-left: var(--space-xl);
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+
+.footer-menu-title {
+    font-weight: bold;
 }
 
 .footer-logo {
     --col-span: var(--grid);
     flex: 0 0 var(--width-no-gutter);
     margin: var(--gutter-sm) 0;
+    order: initial;
 }
 
 .footer-logo .logo-link {
     width: 240px;
 }
-
-
-
 
 mark {
     background: var(--additional-4);
@@ -733,7 +781,7 @@ header.woocommerce-Address-title.title {
     }
 
     .menu-hoofdmenu-container {
-        padding-top: calc(var(--nav-mobile-height) + var(--space-md));
+        padding-top: calc(var(--nav-mobile-height) + var(--space-xl));
     }
 
     .hamburger {
