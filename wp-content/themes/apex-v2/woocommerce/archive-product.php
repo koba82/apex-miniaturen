@@ -19,6 +19,10 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
+$term = get_queried_object();
+
+$staticID = lister_page_content($term->name);
+
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -30,7 +34,7 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
     <header class="woocommerce-products-header">
-        <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+        <?php if ( apply_filters( 'woocommerce_show_page_title', true ) && !$staticID) : ?>
             <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
         <?php endif; ?>
 
@@ -47,9 +51,6 @@ do_action( 'woocommerce_before_main_content' );
 
 <?php
 
-    $term = get_queried_object();
-
-    $staticID = lister_page_content($term->name);
 
     if( $staticID && have_rows('flex', $staticID) ):
         while ( have_rows('flex', $staticID) ) : the_row();
